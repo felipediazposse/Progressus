@@ -3,7 +3,7 @@ using MercadoPago.Client.Payment;
 using MercadoPago.Client.Preference;
 using MercadoPago.Config;
 using MercadoPago.Resource.Preference;
-using WebApiMercadoPago.DataContext;
+using ProgressusWebApi.DataContext;
 using WebApiMercadoPago.Repositories.Interface;
 
 namespace WebApiMercadoPago.Repositories
@@ -11,8 +11,8 @@ namespace WebApiMercadoPago.Repositories
     public class MercadoPagoRepository : IMercadoPagoRepository
     {
 
-        private readonly MercadoPagoDataContext _context;
-        public MercadoPagoRepository(MercadoPagoDataContext dataContext)
+        private readonly ProgressusDataContext _context;
+        public MercadoPagoRepository(ProgressusDataContext dataContext)
         {
             _context = dataContext;
         }

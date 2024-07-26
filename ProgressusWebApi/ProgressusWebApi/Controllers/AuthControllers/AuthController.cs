@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ProgressusWebApi.Dtos.AuthDtos;
 using ProgressusWebApi.Services.AuthServices.Interfaces;
@@ -17,25 +18,22 @@ namespace ProgressusWebApi.Controllers.AuthControllers
         }
 
         [HttpPost("EnviarCodigoDeVerificacion")]
-        public async Task<IActionResult> EnviarCodigoDeVerificacion([FromBody] CorreoRequestDto correo)
+        public async Task<IActionResult> EnviarCodigoDeVerificacionDeCorreo([FromBody] CorreoRequestDto correo)
         {
-            _usuarioService.EnviarCodigoDeVerificacionDeCorreo(correo.Email);
-            return Ok();
+            return await _usuarioService.EnviarCodigoDeVerificacion(correo.Email);
         }
 
-        [HttpPost("confirmarCorreo")]
-        public async Task<IActionResult> ConfirmarCorreo([FromBody] ConfirmacionCorreoDto confirmacionCorreo)
+        [HttpPost("ComprobarCodigoDeCambioContraseña")]
+        public async Task<IActionResult> ComprobarCodigoDeCambioContraseña([FromBody] CodigoDeVerificacionDto codigoDeVerificacion)
         {
-            var token = await _usuarioService.ConfirmarCorreo(confirmacionCorreo);
+            return await _usuarioService.ObtenerTokenCambioDeContraseña(codigoDeVerificacion);
+        }
 
-            if (token != null)
-            {
-                return Ok(token);
-            }
-            else
-            {
-                return BadRequest("Código de verificación incorrecto.");
-            }
+
+        [HttpPost("ConfirmarCorreo")]
+        public async Task<IActionResult> ConfirmarCorreo([FromBody] CodigoDeVerificacionDto codigoDeVerificacion)
+        {
+            return await _usuarioService.ConfirmarCorreo(codigoDeVerificacion);
         }
     }
 

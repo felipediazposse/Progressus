@@ -1,4 +1,5 @@
-﻿using ProgressusWebApi.Model;
+﻿using ProgressusWebApi.Dtos.EjercicioDtos.EjercicioDto;
+using ProgressusWebApi.Model;
 
 namespace ProgressusWebApi.Services.PlanEntrenamientoServices.Interfaces
 {
@@ -10,7 +11,7 @@ namespace ProgressusWebApi.Services.PlanEntrenamientoServices.Interfaces
         Task<PlanDeEntrenamiento> Eliminar(int id);
         Task<List<PlanDeEntrenamiento>> ObtenerPlantillasDePlanes();
         Task<List<PlanDeEntrenamiento>> ObtenerHistorialDePlanesAsignados(int socioId);
-        Task<PlanDeEntrenamiento> AgregarEjercicio(int planEntrenamientoId, int ejercicioId, int diaDeLaSemana);
-        Task<PlanDeEntrenamiento> QuitarEjercicio(int planEntrenamientoId, int ejercicioId, int diaDeLaSemana);
+        Task<PlanDeEntrenamiento> AgregarEjercicio(AgregarQuitarMusculoAEjercicioDto ejercicio);
+        Task<PlanDeEntrenamiento> QuitarEjercicio(AgregarQuitarMusculoAEjercicioDto ejercicio);
     }
 }

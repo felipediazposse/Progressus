@@ -3,6 +3,7 @@ using ProgressusWebApi.Utilities;
 using System.Net.Mail;
 using System.Net;
 using ProgressusWebApi.Services.EmailServices.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ProgressusWebApi.Services.EmailServices
 {
@@ -14,7 +15,7 @@ namespace ProgressusWebApi.Services.EmailServices
             _mailSetter = mailSetter.Value;
         }
 
-        public void SendEmail(string subject, string body, string to)
+        public async Task<IActionResult> SendEmail(string subject, string body, string to)
         {
             try
             {
@@ -34,6 +35,7 @@ namespace ProgressusWebApi.Services.EmailServices
                     EnableSsl = true,
                 };
                 smtpClient.Send(message);
+                return new OkObjectResult(HttpStatusCode.OK);
             }
             catch (Exception e)
             {

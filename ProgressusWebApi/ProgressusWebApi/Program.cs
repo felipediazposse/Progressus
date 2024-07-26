@@ -2,16 +2,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using ProgressusWebApi.DataContext;
-using ProgressusWebApi.Repositories.AuthRepository;
-using ProgressusWebApi.Repositories.AuthRepository.IRepositories;
-using ProgressusWebApi.Repositories.Interfaces;
-using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories;
 using ProgressusWebApi.Services.AuthServices;
 using ProgressusWebApi.Services.AuthServices.Interfaces;
 using ProgressusWebApi.Services.EmailServices;
 using ProgressusWebApi.Services.EmailServices.Interfaces;
-using ProgressusWebApi.Services.Interfaces;
-using ProgressusWebApi.Services.PlanEntrenamientoServices;
 using ProgressusWebApi.Utilities;
 using Swashbuckle.AspNetCore.Filters;
 using WebApiMercadoPago.Repositories.Interface;
@@ -19,6 +13,10 @@ using WebApiMercadoPago.Repositories;
 using WebApiMercadoPago.Services.Interface;
 using WebApiMercadoPago.Services;
 using MercadoPago.Config;
+using ProgressusWebApi.Repositories.EjercicioRepositories;
+using ProgressusWebApi.Repositories.EjercicioRepositories.Interfaces;
+using ProgressusWebApi.Services.EjercicioServices.Interfaces;
+using ProgressusWebApi.Services.EjercicioServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,9 +29,12 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 
 // Inyección de repositorios y servicios
 builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 builder.Services.AddScoped<IEjercicioRepository, EjercicioRepository>();
 builder.Services.AddScoped<IEjercicioService, EjercicioService>();
+builder.Services.AddScoped<IMusculoDeEjercicioRepository, MusculoDeEjercicioRepository>();
+builder.Services.AddScoped<IMusculoDeEjercicioService, MusculoDeEjercicioService>();
+builder.Services.AddScoped<IGrupoMuscularRepository, GrupoMuscularRepository>();
+builder.Services.AddScoped<IGrupoMuscularService, GrupoMuscularService>();
 builder.Services.AddMemoryCache();
 
 // Permitir documentación y acceso de los endpoints con swagger
@@ -58,7 +59,7 @@ builder.Services.AddDbContext<ProgressusDataContext>(options =>
 builder.Services.AddAuthorization();
 builder.Services.AddIdentityApiEndpoints<IdentityUser>(options =>
 {
-    //options.SignIn.RequireConfirmedEmail = true;
+    options.SignIn.RequireConfirmedEmail = true;
 })
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ProgressusDataContext>();

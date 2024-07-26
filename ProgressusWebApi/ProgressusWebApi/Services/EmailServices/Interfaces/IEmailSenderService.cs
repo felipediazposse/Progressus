@@ -1,7 +1,9 @@
-﻿namespace ProgressusWebApi.Services.EmailServices.Interfaces
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace ProgressusWebApi.Services.EmailServices.Interfaces
 {
     public interface IEmailSenderService
     {
-        void SendEmail(string subject, string body, string to);
+        Task<IActionResult> SendEmail(string subject, string body, string to);
     }
 }

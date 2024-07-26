@@ -1,12 +1,16 @@
-﻿using ProgressusWebApi.Dtos.AuthDtos;
+﻿using Microsoft.AspNetCore.Mvc;
+using ProgressusWebApi.Dtos.AuthDtos;
 
 namespace ProgressusWebApi.Services.AuthServices.Interfaces
 {
     public interface IAuthService
     {
-        Task<bool> EnviarCodigoDeVerificacionDeCorreo(string email);
+        Task<IActionResult?> EnviarCodigoDeVerificacion(string email);
 
-        Task<TokenConfirmacionCorreoDto?> ConfirmarCorreo(ConfirmacionCorreoDto confirmacionCorreo);
+        Task<IActionResult?> ConfirmarCorreo(CodigoDeVerificacionDto codigoDeVerificacion);
 
+        Task<IActionResult?> ObtenerTokenCambioDeContraseña(CodigoDeVerificacionDto codigoDeVerificacion);
+
+        Task<bool> ComprobarCodigoDeVerificacion(CodigoDeVerificacionDto codigoDeVerificacion);
     }
 }

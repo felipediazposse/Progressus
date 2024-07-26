@@ -1,5 +1,4 @@
-﻿using ProgressusWebApi.Model;
-using ProgressusWebApi.Models.PlanEntrenamientoModels;
+﻿using ProgressusWebApi.Models.PlanEntrenamientoModels;
 
 namespace ProgressusWebApi.Repositories.PlanEntrenamientoRepositories.Interfaces
 {

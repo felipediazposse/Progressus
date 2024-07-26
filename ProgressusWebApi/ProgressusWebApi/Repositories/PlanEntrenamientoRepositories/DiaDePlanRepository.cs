@@ -5,12 +5,12 @@ namespace ProgressusWebApi.Repositories.PlanEntrenamientoRepositories
 {
     public class DiaDePlanRepository : IDiaDePlanRepository
     {
-        public Task<DiaDePlan> Crear(DiaDePlan diaDePlan)
+        public Task<DiaDePlan> Crear(int planDeEntrenamientoId, int numeroDeDia)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> Eliminar(int id)
+        public Task<bool> Eliminar(int planDeEntrenamientoId, int numeroDeDia)
         {
             throw new NotImplementedException();
         }

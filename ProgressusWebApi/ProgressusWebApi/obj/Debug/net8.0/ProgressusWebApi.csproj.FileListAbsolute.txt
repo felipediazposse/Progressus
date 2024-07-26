@@ -147,3 +147,5 @@ D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\Prog
 D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.pdb
 D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.genruntimeconfig.cache
 D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ref\ProgressusWebApi.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.sourcelink.json
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\MercadoPago.dll

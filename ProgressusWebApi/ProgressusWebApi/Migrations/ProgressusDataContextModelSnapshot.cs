@@ -220,6 +220,255 @@ namespace ProgressusWebApi.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("ProgressusWebApi.Model.DiaDePlan", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("NumeroDeDia")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PlanDeEntrenamientoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PlanDeEntrenamientoId");
+
+                    b.ToTable("DiasDePlan");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Model.ObjetivoDelPlan", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ObjetivosDePlanes");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Model.PlanDeEntrenamiento", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CantidadDeSemanas")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DiasPorSemana")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("EsPlantilla")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("FechaDeCreacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ObjetivoDelPlanId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ObjetivoDelPlanId");
+
+                    b.ToTable("PlanesDeEntrenamiento");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Model.SerieDeEjercicio", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DiaDePlanId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EjercicioId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumeroDeSerie")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RepeticionesConcretadas")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("fechaDeRealizacion")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id", "DiaDePlanId", "EjercicioId");
+
+                    b.HasIndex("EjercicioId", "DiaDePlanId");
+
+                    b.ToTable("SeriesDeEjercicio");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.EjercicioModels.Ejercicio", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagenMaquina")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("VideoEjercicio")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ejercicios");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.EjercicioModels.GrupoMuscular", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagenGrupoMuscular")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("GruposMusculares");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.EjercicioModels.Musculo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("GrupoMuscularId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ImagenMusculo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GrupoMuscularId");
+
+                    b.ToTable("Musculos");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.EjercicioModels.MusculoDeEjercicio", b =>
+                {
+                    b.Property<int>("EjercicioId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MusculoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("EjercicioId", "MusculoId");
+
+                    b.HasIndex("MusculoId");
+
+                    b.ToTable("MusculosDeEjercicios");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.PlanEntrenamientoModels.AsignacionDePlan", b =>
+                {
+                    b.Property<int>("PlanDeEntrenamientoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SocioId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<bool>("esVigente")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("fechaDeAsginacion")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("PlanDeEntrenamientoId", "SocioId");
+
+                    b.HasIndex("SocioId");
+
+                    b.ToTable("AsignacionesDePlanes");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.PlanEntrenamientoModels.EjercicioEnDiaDelPlan", b =>
+                {
+                    b.Property<int>("EjercicioId")
+                        .HasColumnType("int")
+                        .HasColumnOrder(1);
+
+                    b.Property<int>("DiaDePlanId")
+                        .HasColumnType("int")
+                        .HasColumnOrder(0);
+
+                    b.Property<int>("OrdenDeEjercicio")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Repeticiones")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Series")
+                        .HasColumnType("int");
+
+                    b.HasKey("EjercicioId", "DiaDePlanId");
+
+                    b.HasIndex("DiaDePlanId");
+
+                    b.ToTable("EjerciciosDelDia");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -269,6 +518,144 @@ namespace ProgressusWebApi.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Model.DiaDePlan", b =>
+                {
+                    b.HasOne("ProgressusWebApi.Model.PlanDeEntrenamiento", "PlanDeEntrenamiento")
+                        .WithMany("DiasDelPlan")
+                        .HasForeignKey("PlanDeEntrenamientoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PlanDeEntrenamiento");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Model.PlanDeEntrenamiento", b =>
+                {
+                    b.HasOne("ProgressusWebApi.Model.ObjetivoDelPlan", "ObjetivoDelPlan")
+                        .WithMany("PlanesDeEntrenamiento")
+                        .HasForeignKey("ObjetivoDelPlanId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ObjetivoDelPlan");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Model.SerieDeEjercicio", b =>
+                {
+                    b.HasOne("ProgressusWebApi.Models.PlanEntrenamientoModels.EjercicioEnDiaDelPlan", "EjercicioDelDia")
+                        .WithMany("SeriesDeEjercicio")
+                        .HasForeignKey("EjercicioId", "DiaDePlanId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("EjercicioDelDia");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.EjercicioModels.Musculo", b =>
+                {
+                    b.HasOne("ProgressusWebApi.Models.EjercicioModels.GrupoMuscular", "GrupoMuscular")
+                        .WithMany("MusculosDelGrupo")
+                        .HasForeignKey("GrupoMuscularId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("GrupoMuscular");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.EjercicioModels.MusculoDeEjercicio", b =>
+                {
+                    b.HasOne("ProgressusWebApi.Models.EjercicioModels.Ejercicio", "Ejercicio")
+                        .WithMany("MusculosDeEjercicio")
+                        .HasForeignKey("EjercicioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProgressusWebApi.Models.EjercicioModels.Musculo", "Musculo")
+                        .WithMany("MusculosDeEjercicio")
+                        .HasForeignKey("MusculoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ejercicio");
+
+                    b.Navigation("Musculo");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.PlanEntrenamientoModels.AsignacionDePlan", b =>
+                {
+                    b.HasOne("ProgressusWebApi.Model.PlanDeEntrenamiento", "PlanDeEntrenamiento")
+                        .WithMany("Asignaciones")
+                        .HasForeignKey("PlanDeEntrenamientoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "Socio")
+                        .WithMany()
+                        .HasForeignKey("SocioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PlanDeEntrenamiento");
+
+                    b.Navigation("Socio");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.PlanEntrenamientoModels.EjercicioEnDiaDelPlan", b =>
+                {
+                    b.HasOne("ProgressusWebApi.Model.DiaDePlan", "DiaDePlan")
+                        .WithMany("EjerciciosDelDia")
+                        .HasForeignKey("DiaDePlanId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProgressusWebApi.Models.EjercicioModels.Ejercicio", "Ejercicio")
+                        .WithMany()
+                        .HasForeignKey("EjercicioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DiaDePlan");
+
+                    b.Navigation("Ejercicio");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Model.DiaDePlan", b =>
+                {
+                    b.Navigation("EjerciciosDelDia");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Model.ObjetivoDelPlan", b =>
+                {
+                    b.Navigation("PlanesDeEntrenamiento");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Model.PlanDeEntrenamiento", b =>
+                {
+                    b.Navigation("Asignaciones");
+
+                    b.Navigation("DiasDelPlan");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.EjercicioModels.Ejercicio", b =>
+                {
+                    b.Navigation("MusculosDeEjercicio");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.EjercicioModels.GrupoMuscular", b =>
+                {
+                    b.Navigation("MusculosDelGrupo");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.EjercicioModels.Musculo", b =>
+                {
+                    b.Navigation("MusculosDeEjercicio");
+                });
+
+            modelBuilder.Entity("ProgressusWebApi.Models.PlanEntrenamientoModels.EjercicioEnDiaDelPlan", b =>
+                {
+                    b.Navigation("SeriesDeEjercicio");
                 });
 #pragma warning restore 612, 618
         }
