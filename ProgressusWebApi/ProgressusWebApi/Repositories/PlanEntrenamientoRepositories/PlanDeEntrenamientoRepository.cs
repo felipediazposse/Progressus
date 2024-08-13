@@ -1,48 +1,71 @@
-﻿using ProgressusWebApi.Model;
+﻿using Microsoft.EntityFrameworkCore;
+using ProgressusWebApi.DataContext;
+using ProgressusWebApi.Model;
 using ProgressusWebApi.Repositories.Interfaces;
 
-namespace ProgressusWebApi.Repositories.PlanEntrenamientoRepositories
+namespace ProgressusWebApi.Repositories.PlanEntrenamientoRepositories 
 {
     public class PlanDeEntrenamientoRepository : IPlanDeEntrenamientoRepository
     {
-        public Task<PlanDeEntrenamiento?> Actualizar(int id, PlanDeEntrenamiento planDeEntrenamiento)
+        private readonly ProgressusDataContext _context;
+
+        public PlanDeEntrenamientoRepository(ProgressusDataContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public Task<bool> ComprobarExistencia(int id)
+        public async Task<PlanDeEntrenamiento> Crear(PlanDeEntrenamiento plan)
         {
-            throw new NotImplementedException();
+            _context.PlanesDeEntrenamiento.Add(plan);
+            await _context.SaveChangesAsync();
+            return plan;
         }
 
-        public Task<PlanDeEntrenamiento> Crear(PlanDeEntrenamiento planDeEntrenamiento)
+        public async Task<PlanDeEntrenamiento?> ObtenerPorId(int id)
         {
-            throw new NotImplementedException();
+            return await _context.PlanesDeEntrenamiento
+                .Include(p => p.DiasDelPlan)
+                .FirstOrDefaultAsync(p => p.Id == id);
         }
 
-        public Task<bool> Eliminar(int id)
+        public async Task<List<PlanDeEntrenamiento>> ObtenerPorNombre(string nombre)
         {
-            throw new NotImplementedException();
+            return await _context.PlanesDeEntrenamiento
+                .Where(p => p.Nombre.Contains(nombre))
+                .ToListAsync();
         }
 
-        public Task<PlanDeEntrenamiento> ObtenerPorId(int id)
+        public async Task<List<PlanDeEntrenamiento>> ObtenerPorObjetivo(int objetivoDelPlanId)
         {
-            throw new NotImplementedException();
+            return await _context.PlanesDeEntrenamiento
+                .Where(p => p.ObjetivoDelPlanId == objetivoDelPlanId)
+                .ToListAsync();
         }
 
-        public Task<PlanDeEntrenamiento> ObtenerPorNombre(string nombre)
+        public async Task<PlanDeEntrenamiento> Actualizar(int id, PlanDeEntrenamiento plan)
         {
-            throw new NotImplementedException();
+            _context.PlanesDeEntrenamiento.Update(plan);
+            await _context.SaveChangesAsync();
+            return plan;
         }
 
-        public Task<List<PlanDeEntrenamiento>> ObtenerPorObjetivoDePlan(int objetivoDePlanId)
+        public async Task<bool> Eliminar(int id)
         {
-            throw new NotImplementedException();
+            var plan = await _context.PlanesDeEntrenamiento.FindAsync(id);
+            if (plan != null)
+            {
+                _context.PlanesDeEntrenamiento.Remove(plan);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            return false;
         }
 
-        public Task<List<PlanDeEntrenamiento>> ObtenerTodos()
+        public async Task<List<PlanDeEntrenamiento>> ObtenerPlantillasDePlanes()
         {
-            throw new NotImplementedException();
+            return await _context.PlanesDeEntrenamiento
+                .Where(p => p.EsPlantilla == true)
+                .ToListAsync();
         }
     }
 }

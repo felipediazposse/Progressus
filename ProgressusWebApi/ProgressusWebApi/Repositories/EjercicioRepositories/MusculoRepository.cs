@@ -14,9 +14,17 @@ namespace ProgressusWebApi.Repositories.EjercicioRepositories
             _context = context;
         }
 
-        public async Task<bool> ComprobarExistencia(int id)
+
+        public async Task<Musculo?> Actualizar(int id, Musculo musculo)
         {
-            return await _context.Musculos.AnyAsync(m => m.Id == id);
+            var existingMusculo = await _context.Musculos.FindAsync(id);
+            if (existingMusculo == null) return null;
+            existingMusculo.Nombre = musculo.Nombre;
+            existingMusculo.Descripcion = musculo.Descripcion;
+            existingMusculo.ImagenMusculo = musculo.ImagenMusculo;
+            existingMusculo.GrupoMuscularId = musculo.GrupoMuscularId;
+            await _context.SaveChangesAsync();
+            return existingMusculo;
         }
 
         public async Task<Musculo> Crear(Musculo musculo)
@@ -53,11 +61,11 @@ namespace ProgressusWebApi.Repositories.EjercicioRepositories
               .FirstOrDefaultAsync(m => m.Id == id);
         }
 
-        public async Task<Musculo?> ObtenerPorNombre(string nombre)
+        public async Task<List<Musculo>>? ObtenerPorNombre(string nombre)
         {
             return await _context.Musculos
-                .Include(m => m.GrupoMuscular)
-                .FirstOrDefaultAsync(m => m.Nombre == nombre);
+                                        .Where(gm => gm.Nombre.Contains(nombre))
+                                        .ToListAsync();
         }
 
         public async Task<List<Musculo>> ObtenerTodos()

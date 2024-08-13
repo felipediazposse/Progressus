@@ -1,23 +1,45 @@
-﻿using ProgressusWebApi.Model;
+﻿using Microsoft.EntityFrameworkCore;
+using ProgressusWebApi.DataContext;
+using ProgressusWebApi.Model;
+using ProgressusWebApi.Models.EjercicioModels;
 using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories.Interfaces;
 
 namespace ProgressusWebApi.Repositories.PlanEntrenamientoRepositories
 {
     public class ObjetivoDelPlanRepository : IObjetivoDelPlanRepository
     {
-        public Task<ObjetivoDelPlan> Crear(ObjetivoDelPlan objetivoDelPlan)
+        private readonly ProgressusDataContext _progressusDataContext;
+        public ObjetivoDelPlanRepository(ProgressusDataContext progressusDataContext)
         {
-            throw new NotImplementedException();
+            _progressusDataContext = progressusDataContext;
         }
 
-        public Task<bool> Eliminar(int id)
+        public async Task<ObjetivoDelPlan> Crear(ObjetivoDelPlan objetivoDelPlan)
         {
-            throw new NotImplementedException();
+            _progressusDataContext.ObjetivosDePlanes.Add(objetivoDelPlan);
+            await _progressusDataContext.SaveChangesAsync();
+            return objetivoDelPlan;
         }
 
-        public Task<List<ObjetivoDelPlan>> ObtenerTodos()
+        public async Task<ObjetivoDelPlan?> ObtenerPorId(int id) 
         {
-            throw new NotImplementedException();
+            return await _progressusDataContext.ObjetivosDePlanes
+                                 .FirstOrDefaultAsync(e => e.Id == id);
+        }
+
+        public async Task<ObjetivoDelPlan> Eliminar(int id)
+        {
+            var objetivo = await _progressusDataContext.ObjetivosDePlanes.FindAsync(id);
+            if (objetivo == null) return null;
+            _progressusDataContext.ObjetivosDePlanes.Remove(objetivo);
+            await _progressusDataContext.SaveChangesAsync();
+            return objetivo;
+        }
+
+        public async Task<List<ObjetivoDelPlan>> ObtenerTodos()
+        {
+            return await _progressusDataContext.ObjetivosDePlanes
+                             .ToListAsync();
         }
     }
 }

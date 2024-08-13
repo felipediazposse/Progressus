@@ -1,4 +1,5 @@
-﻿using ProgressusWebApi.Models.PlanEntrenamientoModels;
+﻿using Microsoft.AspNetCore.Identity;
+using ProgressusWebApi.Models.PlanEntrenamientoModels;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -7,6 +8,9 @@ namespace ProgressusWebApi.Model
     public class PlanDeEntrenamiento
     {
         public int Id { get; set; }
+
+        public string DueñoDePlanId { get; set; }
+        public IdentityUser DueñoDelPlan { get; set; }
 
         [Required]
         public string Nombre { get; set; }
@@ -21,7 +25,6 @@ namespace ProgressusWebApi.Model
         [Required]
         public int DiasPorSemana { get; set; }
         public DateTime FechaDeCreacion { get; set; } = DateTime.Now;
-        public int CantidadDeSemanas { get; set; }
         public bool EsPlantilla { get; set; }
         public List<DiaDePlan> DiasDelPlan { get; set; } = new List<DiaDePlan>();
         public List<AsignacionDePlan> Asignaciones { get; set; } = new List<AsignacionDePlan>();

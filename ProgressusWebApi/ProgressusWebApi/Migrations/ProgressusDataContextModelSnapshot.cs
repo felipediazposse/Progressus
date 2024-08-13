@@ -270,15 +270,19 @@ namespace ProgressusWebApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CantidadDeSemanas")
-                        .HasColumnType("int");
-
                     b.Property<string>("Descripcion")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("DiasPorSemana")
                         .HasColumnType("int");
+
+                    b.Property<string>("DueñoDePlanId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DueñoDelPlanId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("EsPlantilla")
                         .HasColumnType("bit");
@@ -294,6 +298,8 @@ namespace ProgressusWebApi.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DueñoDelPlanId");
 
                     b.HasIndex("ObjetivoDelPlanId");
 
@@ -315,6 +321,9 @@ namespace ProgressusWebApi.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("RepeticionesConcretadas")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SemanaDelPlan")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("fechaDeRealizacion")
@@ -533,11 +542,17 @@ namespace ProgressusWebApi.Migrations
 
             modelBuilder.Entity("ProgressusWebApi.Model.PlanDeEntrenamiento", b =>
                 {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "DueñoDelPlan")
+                        .WithMany()
+                        .HasForeignKey("DueñoDelPlanId");
+
                     b.HasOne("ProgressusWebApi.Model.ObjetivoDelPlan", "ObjetivoDelPlan")
                         .WithMany("PlanesDeEntrenamiento")
                         .HasForeignKey("ObjetivoDelPlanId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("DueñoDelPlan");
 
                     b.Navigation("ObjetivoDelPlan");
                 });

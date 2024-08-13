@@ -50,7 +50,7 @@ namespace ProgressusWebApi.Repositories.EjercicioRepositories
             return await _context.GruposMusculares.FindAsync(id);
         }
 
-        public async Task<List<GrupoMuscular>> ObtenerPorNombre(string nombre)
+        public async Task<List<GrupoMuscular>>? ObtenerPorNombre(string nombre)
         {
             return await _context.GruposMusculares
                                  .Where(gm => gm.Nombre.Contains(nombre))

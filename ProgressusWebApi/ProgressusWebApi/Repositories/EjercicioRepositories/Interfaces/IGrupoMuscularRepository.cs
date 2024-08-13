@@ -12,7 +12,7 @@ namespace ProgressusWebApi.Repositories.EjercicioRepositories.Interfaces
         Task<GrupoMuscular> Eliminar(int id);
         Task<bool> ComprobarExistencia(int id);
         Task<GrupoMuscular> ObtenerPorId(int id);
-        Task<List<GrupoMuscular>> ObtenerPorNombre(string nombre);
+        Task<List<GrupoMuscular>>? ObtenerPorNombre(string nombre);
         Task<List<GrupoMuscular>> ObtenerTodos();
         Task<GrupoMuscular?> Actualizar(int id, GrupoMuscular grupoMuscular);
     }

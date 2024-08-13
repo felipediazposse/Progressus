@@ -72,5 +72,6 @@ namespace ProgressusWebApi.Repositories.EjercicioRepositories
             return await _context.Ejercicios.Include(e => e.MusculosDeEjercicio)
                                  .ToListAsync();
         }
+
     }
 }

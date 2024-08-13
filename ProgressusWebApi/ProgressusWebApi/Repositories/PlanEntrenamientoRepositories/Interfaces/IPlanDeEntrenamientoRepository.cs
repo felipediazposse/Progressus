@@ -6,11 +6,10 @@ namespace ProgressusWebApi.Repositories.Interfaces
     {
         Task<PlanDeEntrenamiento> Crear(PlanDeEntrenamiento planDeEntrenamiento);
         Task<bool> Eliminar(int id);
-        Task<bool> ComprobarExistencia(int id);
         Task<PlanDeEntrenamiento> ObtenerPorId(int id);
-        Task<PlanDeEntrenamiento> ObtenerPorNombre(string nombre);
-        Task<List<PlanDeEntrenamiento>> ObtenerTodos();
+        Task<List<PlanDeEntrenamiento>> ObtenerPorNombre(string nombre);
         Task<PlanDeEntrenamiento?> Actualizar(int id, PlanDeEntrenamiento planDeEntrenamiento);
-        Task<List<PlanDeEntrenamiento>> ObtenerPorObjetivoDePlan(int objetivoDePlanId);
+        Task<List<PlanDeEntrenamiento>> ObtenerPorObjetivo(int objetivoDePlanId);
+        Task<List<PlanDeEntrenamiento>> ObtenerPlantillasDePlanes();
     }
 }

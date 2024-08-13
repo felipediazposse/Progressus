@@ -59,19 +59,19 @@
           }
         }
       },
-      "mercadopago-sdk/2.3.8": {
+      "mercadopago-sdk/2.4.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "System.Configuration.ConfigurationManager": "5.0.0"
+          "System.Configuration.ConfigurationManager": "6.0.0"
         },
         "compile": {
-          "lib/net5.0/MercadoPago.dll": {
+          "lib/net6.0/MercadoPago.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net5.0/MercadoPago.dll": {
+          "lib/net6.0/MercadoPago.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -1861,23 +1861,20 @@
         "logo.png"
       ]
     },
-    "mercadopago-sdk/2.3.8": {
-      "sha512": "W41OcPd5ha0H0dwfYQHWTDM/445Uoac4LMpOzc2i9eZx0BoycTAqSFOvxWk90dYix2ZaVifcAPUCpESGXJDrqQ==",
+    "mercadopago-sdk/2.4.0": {
+      "sha512": "oxTbSkn3EAkIu5FSFU6XgWgmx+bxsOleOdpKO+FcO76XN4wqvcFpqU2P095EsyzOfWUp5nqt6wrzv+FPTQf2vA==",
       "type": "package",
-      "path": "mercadopago-sdk/2.3.8",
+      "path": "mercadopago-sdk/2.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net461/MercadoPago.dll",
-        "lib/net461/MercadoPago.pdb",
-        "lib/net461/MercadoPago.xml",
-        "lib/net5.0/MercadoPago.dll",
-        "lib/net5.0/MercadoPago.pdb",
-        "lib/net5.0/MercadoPago.xml",
-        "lib/netstandard2.0/MercadoPago.dll",
-        "lib/netstandard2.0/MercadoPago.pdb",
-        "lib/netstandard2.0/MercadoPago.xml",
-        "mercadopago-sdk.2.3.8.nupkg.sha512",
+        "lib/net6.0/MercadoPago.dll",
+        "lib/net6.0/MercadoPago.pdb",
+        "lib/net6.0/MercadoPago.xml",
+        "lib/netstandard2.1/MercadoPago.dll",
+        "lib/netstandard2.1/MercadoPago.pdb",
+        "lib/netstandard2.1/MercadoPago.xml",
+        "mercadopago-sdk.2.4.0.nupkg.sha512",
         "mercadopago-sdk.nuspec"
       ]
     },
@@ -4975,7 +4972,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
       "Swashbuckle.AspNetCore >= 6.4.0",
       "Swashbuckle.AspNetCore.Filters >= 8.0.2",
-      "mercadopago-sdk >= 2.3.8"
+      "mercadopago-sdk >= 2.4.0"
     ]
   },
   "packageFolders": {
@@ -5057,7 +5054,7 @@
           },
           "mercadopago-sdk": {
             "target": "Package",
-            "version": "[2.3.8, )"
+            "version": "[2.4.0, )"
           }
         },
         "imports": [

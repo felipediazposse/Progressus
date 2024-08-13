@@ -15,9 +15,7 @@ namespace WebApiMercadoPago.Models
 
         public string Email { get; set; }
 
-        public Telefono Telefono { get; set; }
-
-        public Identificacion Identificacion { get; set; }
+        public string Telefono { get; set; }
 
     }
 }

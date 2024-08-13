@@ -29,6 +29,11 @@ namespace ProgressusWebApi.Controllers.AuthControllers
             return await _usuarioService.ObtenerTokenCambioDeContraseña(codigoDeVerificacion);
         }
 
+        [HttpPut("CambiarContraseña")]
+        public async Task<IActionResult> CambiarContraseña([FromBody] CambioDeContraseñaDto cambioDeContraseñaDto)
+        {
+            return await _usuarioService.CambiarContraseña(cambioDeContraseñaDto);
+        }
 
         [HttpPost("ConfirmarCorreo")]
         public async Task<IActionResult> ConfirmarCorreo([FromBody] CodigoDeVerificacionDto codigoDeVerificacion)

@@ -1,4 +1,5 @@
-﻿using ProgressusWebApi.Models.EjercicioModels;
+﻿using ProgressusWebApi.Dtos.EjercicioDtos.MusculoDto;
+using ProgressusWebApi.Models.EjercicioModels;
 using ProgressusWebApi.Repositories.EjercicioRepositories.Interfaces;
 using ProgressusWebApi.Services.EjercicioServices.Interfaces;
 
@@ -12,9 +13,28 @@ namespace ProgressusWebApi.Services.EjercicioServices
             _musculoRepository = musculoRepository;
         }
 
-        public async Task<Musculo> Crear(Musculo musculo)
+        public async Task<Musculo> Crear(CrearActualizarMusculoDto musculoDto)
         {
-            return await _musculoRepository.Crear(musculo);
+            Musculo musculoCreado = new Musculo()
+            {
+                Nombre = musculoDto.Nombre,
+                Descripcion = musculoDto.Descripcion,
+                ImagenMusculo = musculoDto.ImagenMusculo,
+                GrupoMuscularId = musculoDto.GrupoMuscularId
+            };
+            return await _musculoRepository.Crear(musculoCreado);
+        }
+
+        public async Task<Musculo> Actualizar(int id, CrearActualizarMusculoDto musculoDto)
+        {
+            Musculo musculoActualizado = new Musculo()
+            {
+                Nombre = musculoDto.Nombre,
+                Descripcion = musculoDto.Descripcion,
+                ImagenMusculo = musculoDto.ImagenMusculo,
+                GrupoMuscularId = musculoDto.GrupoMuscularId
+            };
+            return await _musculoRepository.Actualizar(id, musculoActualizado);
         }
 
         public async Task<Musculo?> Eliminar(int id)
@@ -32,7 +52,7 @@ namespace ProgressusWebApi.Services.EjercicioServices
             return await _musculoRepository.ObtenerPorId(id);
         }
 
-        public async Task<Musculo?> ObtenerPorNombre(string nombre)
+        public async Task<List<Musculo>>? ObtenerPorNombre(string nombre)
         {
             return await _musculoRepository.ObtenerPorNombre(nombre);
         }

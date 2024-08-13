@@ -1,8 +1,13 @@
-﻿using ProgressusWebApi.Dtos.EjercicioDtos.EjercicioDto;
+﻿using Microsoft.AspNetCore.Mvc;
+using ProgressusWebApi.Dtos.EjercicioDtos.EjercicioDto;
+using ProgressusWebApi.Dtos.PlanDeEntrenamientoDtos.PlanDeEntrenamiento;
+using ProgressusWebApi.Dtos.PlanDeEntrenamientoDtos.PlanDeEntrenamientoDto;
 using ProgressusWebApi.Model;
 using ProgressusWebApi.Models.EjercicioModels;
+using ProgressusWebApi.Models.PlanEntrenamientoModels;
 using ProgressusWebApi.Repositories.EjercicioRepositories.Interfaces;
 using ProgressusWebApi.Repositories.Interfaces;
+using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories;
 using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories.Interfaces;
 using ProgressusWebApi.Services.PlanEntrenamientoServices.Interfaces;
 
@@ -21,64 +26,114 @@ namespace ProgressusWebApi.Services.PlanEntrenamientoServices
             _ejercicioDePlanRepository = ejercicioDePlanRepository;
             _ejercicioRepository = ejercicioRepository;
         }
-        public Task<PlanDeEntrenamiento> Crear(PlanDeEntrenamiento plan)
+        public async Task<PlanDeEntrenamiento> Crear(CrearPlanDeEntrenamientoDto planDto)
         {
-            var planCreado = _planEntrenamientoRepository.Crear(plan);
+            PlanDeEntrenamiento plan = new PlanDeEntrenamiento()
+            {
+                Nombre = planDto.Nombre,
+                Descripcion = planDto.Descripcion,
+                DiasPorSemana = planDto.DiasPorSemana,
+                ObjetivoDelPlanId = planDto.ObjetivoDelPlanId,
+                DueñoDePlanId = planDto.DueñoId,
+            };
+
+            PlanDeEntrenamiento planCreado = await _planEntrenamientoRepository.Crear(plan);
+
             for (int i = 0; i < plan.DiasPorSemana; i++)
             {
-                _diaDePlanRepository.Crear(plan.Id, i);
+                DiaDePlan diaDePlan = new DiaDePlan()
+                {
+                    PlanDeEntrenamientoId = plan.Id,
+                    NumeroDeDia = i + 1
+                };
+                await _diaDePlanRepository.Crear(diaDePlan); 
             }
             return planCreado;
         }
-        public async Task<PlanDeEntrenamiento> Actualizar(int id, PlanDeEntrenamiento planActualizado)
+        public async Task<PlanDeEntrenamiento> Actualizar(int id, ActualizarPlanDeEntrenamientoDto planActualizadoDto)
         {
-            PlanDeEntrenamiento planSinActualizar = _planEntrenamientoRepository.ObtenerPorId(id).Result;
-            if (planSinActualizar.DiasPorSemana > planActualizado.DiasPorSemana)
+            var plan = await _planEntrenamientoRepository.ObtenerPorId(id);
+
+            if (plan == null) throw new Exception("Plan de entrenamiento no encontrado.");
+
+            plan.Nombre = planActualizadoDto.Nombre;
+            plan.Descripcion = planActualizadoDto.Descripcion;
+            plan.ObjetivoDelPlanId = planActualizadoDto.ObjetivoDelPlanId;
+        
+            return await _planEntrenamientoRepository.Actualizar(id, plan);
+        }
+
+        public async Task<PlanDeEntrenamiento?> ActualizarEjerciciosDelPlan(int planId, AgregarQuitarEjerciciosAPlanDto ejerciciosEnPlanDto)
+        {
+            var plan = await _planEntrenamientoRepository.ObtenerPorId(planId);
+
+            if (plan == null) throw new Exception("Plan de entrenamiento no encontrado.");
+
+            _ejercicioDePlanRepository.QuitarEjerciciosDelPlan(planId);
+
+            foreach (var ejercicio in ejerciciosEnPlanDto.Ejercicios)
             {
-                int diasAQuitar = planSinActualizar.DiasPorSemana - planActualizado.DiasPorSemana;
-                for (int i = 0; i < diasAQuitar; i++)
+                DiaDePlan diaDePlan = await _diaDePlanRepository.ObtenerDiaDePlan(planId, ejercicio.NumeroDiaDelPlan);
+                EjercicioEnDiaDelPlan ejercicioEnDiaDelPlan = new EjercicioEnDiaDelPlan()
                 {
-                    _diaDePlanRepository.Eliminar(id, planSinActualizar.DiasPorSemana - i);
-                }
+                    EjercicioId = ejercicio.EjercicioId,
+                    DiaDePlanId = diaDePlan.Id,
+                    OrdenDeEjercicio = ejercicio.OrdenDelEjercicio,
+                    Series = ejercicio.Series,
+                    Repeticiones = ejercicio.Repeticiones,
+                    DiaDePlan = diaDePlan
+                };
+                _ejercicioDePlanRepository.AgregarEjercicioADiaDelPlan(ejercicioEnDiaDelPlan);
             }
-            if (planSinActualizar.DiasPorSemana < planActualizado.DiasPorSemana)
-            {
-                int diasAAgregar = planActualizado.DiasPorSemana - planSinActualizar.DiasPorSemana;
-                for (int i = 0; i < diasAAgregar; i--)
-                {
-                    _diaDePlanRepository.Crear(id, planSinActualizar.DiasPorSemana + 1 + i);
-                }
-            }
-            return await _planEntrenamientoRepository.Actualizar(id, planActualizado);
+
+            return plan;
         }
 
-        public Task<PlanDeEntrenamiento> AgregarEjercicio(AgregarQuitarMusculoAEjercicioDto ejercicio)
+        public async Task<bool> Eliminar(int id)
         {
-            throw new NotImplementedException();
-        }
-        public Task<PlanDeEntrenamiento> QuitarEjercicio(AgregarQuitarMusculoAEjercicioDto ejercicio)
-        {
-            throw new NotImplementedException();
+            return await _planEntrenamientoRepository.Eliminar(id);
         }
 
-        public Task<PlanDeEntrenamiento> Eliminar(int id)
+
+        public async Task<PlanDeEntrenamiento?> ConvertirEnPlantilla(int id)
         {
-            throw new NotImplementedException();
+            var plan = await _planEntrenamientoRepository.ObtenerPorId(id);
+
+            if (plan == null) throw new Exception("Plan de entrenamiento no encontrado.");
+
+            plan.EsPlantilla = true;
+
+            return await _planEntrenamientoRepository.Actualizar(id, plan);
         }
 
-        public Task<List<PlanDeEntrenamiento>> ObtenerHistorialDePlanesAsignados(int socioId)
+        public async Task<PlanDeEntrenamiento?> QuitarConvertirEnPlantilla(int id)
         {
-            throw new NotImplementedException();
+            var plan = await _planEntrenamientoRepository.ObtenerPorId(id);
+
+            if (plan == null) throw new Exception("Plan de entrenamiento no encontrado.");
+
+            plan.EsPlantilla = false;
+
+            return await _planEntrenamientoRepository.Actualizar(id, plan);
         }
 
-        public Task<PlanDeEntrenamiento> ObtenerPlanAsginado(int socioId)
+        public async Task<List<PlanDeEntrenamiento>> ObtenerPorNombre(string nombre)
         {
-            throw new NotImplementedException();
+            return await _planEntrenamientoRepository.ObtenerPorNombre(nombre);
         }
 
-        public Task<List<PlanDeEntrenamiento>> ObtenerPlantillasDePlanes()
+        public async Task<List<PlanDeEntrenamiento>> ObtenerPorObjetivo(int objetivoDelPlanId)
         {
-            throw new NotImplementedException();
+            return await _planEntrenamientoRepository.ObtenerPorObjetivo(objetivoDelPlanId);
+        }
+        public async Task<List<PlanDeEntrenamiento>> ObtenerPlantillasDePlanes()
+        {
+            return await _planEntrenamientoRepository.ObtenerPlantillasDePlanes();
+        }
+
+        public async Task<PlanDeEntrenamiento> ObtenerPorId(int id)
+        {
+            return await _planEntrenamientoRepository.ObtenerPorId(id);
         }
     }
 }

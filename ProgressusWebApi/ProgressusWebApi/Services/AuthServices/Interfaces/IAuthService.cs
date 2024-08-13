@@ -12,5 +12,7 @@ namespace ProgressusWebApi.Services.AuthServices.Interfaces
         Task<IActionResult?> ObtenerTokenCambioDeContraseña(CodigoDeVerificacionDto codigoDeVerificacion);
 
         Task<bool> ComprobarCodigoDeVerificacion(CodigoDeVerificacionDto codigoDeVerificacion);
+
+        Task<IActionResult> CambiarContraseña(CambioDeContraseñaDto cambioDeContraseñaDto);
     }
 }

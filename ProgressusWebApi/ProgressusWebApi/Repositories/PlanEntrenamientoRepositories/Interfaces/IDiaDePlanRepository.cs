@@ -4,7 +4,8 @@ namespace ProgressusWebApi.Repositories.PlanEntrenamientoRepositories.Interfaces
 {
     public interface IDiaDePlanRepository
     {
-        Task<DiaDePlan> Crear(int planDeEntrenamientoId, int numeroDeDia);
-        Task<bool> Eliminar(int planDeEntrenamientoId, int numeroDeDia);
+        Task<DiaDePlan> Crear(DiaDePlan diaDePlan);
+        Task<bool> Eliminar(DiaDePlan diaDePlan);
+        Task<DiaDePlan> ObtenerDiaDePlan(int planId, int numeroDeDia);
     }
 }

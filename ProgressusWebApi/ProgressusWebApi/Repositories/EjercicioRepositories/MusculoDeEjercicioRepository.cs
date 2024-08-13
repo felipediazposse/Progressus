@@ -2,45 +2,47 @@
 using ProgressusWebApi.DataContext;
 using ProgressusWebApi.Models.EjercicioModels;
 using ProgressusWebApi.Repositories.EjercicioRepositories.Interfaces;
+using ProgressusWebApi.Services.EjercicioServices.Interfaces;
 
 namespace ProgressusWebApi.Repositories.EjercicioRepositories
 {
     public class MusculoDeEjercicioRepository : IMusculoDeEjercicioRepository
     {
-        private readonly ProgressusDataContext _context;
+        private readonly ProgressusDataContext _progressusDataContext;
 
-        public MusculoDeEjercicioRepository(ProgressusDataContext context)
+        public MusculoDeEjercicioRepository(ProgressusDataContext progressusDataContext)
         {
-            _context = context;
-        }
-        public async Task<List<MusculoDeEjercicio>> ObtenerMusculosDeEjercicio(int ejercicioId)
-        {
-            return await _context.Set<MusculoDeEjercicio>()
-                                 .Include(mde => mde.Musculo)
-                                 .Where(mde => mde.EjercicioId == ejercicioId)
-                                 .ToListAsync();
+            _progressusDataContext = progressusDataContext;
         }
 
         public async Task<MusculoDeEjercicio?> AgregarMusculoAEjercicio(MusculoDeEjercicio musculoDeEjercicio)
         {
-            _context.Set<MusculoDeEjercicio>().Add(musculoDeEjercicio);
-            await _context.SaveChangesAsync();
+            _progressusDataContext.Set<MusculoDeEjercicio>().Add(musculoDeEjercicio);
+            await _progressusDataContext.SaveChangesAsync();
 
             return musculoDeEjercicio;
         }
 
-        public async Task<MusculoDeEjercicio?> QuitarMusculoAEjercicio(MusculoDeEjercicio musculoDeEjercicio)
+        public async Task<List<int>?> ObtenerIdsDeMusculosDeEjercicio(int ejercicioId)
         {
-            var musculoExiste = await _context.Set<MusculoDeEjercicio>()
-                                                   .FirstOrDefaultAsync(mde => mde.EjercicioId == musculoDeEjercicio.EjercicioId && mde.MusculoId == musculoDeEjercicio.MusculoId);
+            var resultado = await _progressusDataContext.MusculosDeEjercicios
+                                                .Where(me => me.EjercicioId == ejercicioId)
+                                                .Select(me => me.MusculoId)
+                                                .ToListAsync();
+            var resultado2 = 2;
+            return resultado;
+        }
+
+        public async Task QuitarMusculoAEjercicio(int ejercicioId, int musculoId)
+        {
+            var musculoExiste = await _progressusDataContext.Set<MusculoDeEjercicio>()
+                                               .FirstOrDefaultAsync(mde => mde.EjercicioId == ejercicioId && mde.MusculoId == musculoId);
 
             if (musculoExiste != null)
             {
-                _context.Set<MusculoDeEjercicio>().Remove(musculoDeEjercicio);
-                await _context.SaveChangesAsync();
+                _progressusDataContext.Set<MusculoDeEjercicio>().Remove(musculoExiste);
+                await _progressusDataContext.SaveChangesAsync();
             }
-
-            return musculoDeEjercicio;
         }
 
     }

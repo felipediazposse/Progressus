@@ -4,8 +4,8 @@ namespace ProgressusWebApi.Repositories.EjercicioRepositories.Interfaces
 {
     public interface IMusculoDeEjercicioRepository
     {
-        Task<List<MusculoDeEjercicio>> ObtenerMusculosDeEjercicio(int ejercicioId);
+        Task<List<int>> ObtenerIdsDeMusculosDeEjercicio(int ejercicioId);
         Task<MusculoDeEjercicio?> AgregarMusculoAEjercicio(MusculoDeEjercicio musculoDeEjercicio);
-        Task<MusculoDeEjercicio?> QuitarMusculoAEjercicio(MusculoDeEjercicio musculoDeEjercicio);
+        Task QuitarMusculoAEjercicio(int ejercicioId, int musculoId);
     }
 }

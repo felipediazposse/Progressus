@@ -94,6 +94,20 @@ namespace ProgressusWebApi.Services.AuthServices
             }
         }
 
+        public async Task<IActionResult> CambiarContraseña(CambioDeContraseñaDto cambioDeContraseñaDto)
+        {
+            try
+            {
+                IdentityUser? usuarioCambioContraseña = await _userManager.FindByEmailAsync(cambioDeContraseñaDto.Email);
+                await _userManager.ResetPasswordAsync(usuarioCambioContraseña, cambioDeContraseñaDto.Token, cambioDeContraseñaDto.nuevaContraseña);
+                return new OkResult();
+            }
+            catch (Exception ex)
+            {
+
+                return new BadRequestObjectResult(ex);
+            }
+        }
         public async Task<bool> ComprobarCodigoDeVerificacion(CodigoDeVerificacionDto codigoDeVerificacion)
         {
             try

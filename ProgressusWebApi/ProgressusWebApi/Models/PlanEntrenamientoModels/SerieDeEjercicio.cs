@@ -22,6 +22,9 @@ namespace ProgressusWebApi.Model
         public int NumeroDeSerie { get; set; }
 
         [Required]
+        public int SemanaDelPlan { get; set; }
+
+        [Required]
         public int RepeticionesConcretadas { get; set; }
         public DateTime fechaDeRealizacion { get; set; }
     }

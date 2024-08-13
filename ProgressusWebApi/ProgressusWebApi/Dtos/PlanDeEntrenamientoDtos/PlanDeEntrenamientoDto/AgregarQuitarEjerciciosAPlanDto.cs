@@ -1,6 +1,6 @@
 ﻿using ProgressusWebApi.Model;
 
-namespace ProgressusWebApi.Dtos.PlanDeEntrenamientoDtos
+namespace ProgressusWebApi.Dtos.PlanDeEntrenamientoDtos.PlanDeEntrenamiento
 {
     public class AgregarQuitarEjerciciosAPlanDto
     {

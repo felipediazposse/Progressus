@@ -1,23 +1,43 @@
-﻿using ProgressusWebApi.Models.PlanEntrenamientoModels;
+﻿using Microsoft.EntityFrameworkCore;
+using ProgressusWebApi.DataContext;
+using ProgressusWebApi.Models.PlanEntrenamientoModels;
 using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories.Interfaces;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProgressusWebApi.Repositories.PlanEntrenamientoRepositories
 {
     public class EjercicioEnDiaDelPlanRepository : IEjercicioEnDiaDelPlanRepository
     {
-        public Task<EjercicioEnDiaDelPlan?> AgregarEjercicioADiaDelPlan(int diaDelPlanId, int ejercicioId)
+        private readonly ProgressusDataContext _progressusDataContext;
+        public EjercicioEnDiaDelPlanRepository(ProgressusDataContext progressusDataContext)
         {
-            throw new NotImplementedException();
+            _progressusDataContext = progressusDataContext;
+        }
+        public async Task<EjercicioEnDiaDelPlan?> AgregarEjercicioADiaDelPlan(EjercicioEnDiaDelPlan ejercicioEnDiaDelPlan)
+        {
+            _progressusDataContext.EjerciciosDelDia.Add(ejercicioEnDiaDelPlan);
+            await _progressusDataContext.SaveChangesAsync();
+            return ejercicioEnDiaDelPlan;
         }
 
-        public Task<List<EjercicioEnDiaDelPlan>> ObtenerEjerciciosDelDia(int diaDelPlanId)
+        public async Task<List<EjercicioEnDiaDelPlan>> ObtenerEjerciciosDelDia(int diaDelPlanId)
         {
-            throw new NotImplementedException();
+            return await _progressusDataContext.EjerciciosDelDia
+               .Where(e => e.DiaDePlanId == diaDelPlanId)
+               .ToListAsync();
         }
 
-        public Task<EjercicioEnDiaDelPlan?> QuitarEjercicioDelDiaDelPlan(int diaDelPlanId, int ejercicioId)
+        public async Task QuitarEjerciciosDelPlan(int planId)
         {
-            throw new NotImplementedException();
+            // Obtiene los ejercicios a eliminar
+            var ejerciciosAEliminar = _progressusDataContext.EjerciciosDelDia
+                .Where(e => e.DiaDePlan.PlanDeEntrenamientoId == planId);
+
+            // Elimina los ejercicios obtenidos
+            _progressusDataContext.EjerciciosDelDia.RemoveRange(ejerciciosAEliminar);
+
+            // Guarda los cambios en la base de datos
+            await _progressusDataContext.SaveChangesAsync();
         }
     }
 }

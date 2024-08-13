@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ProgressusWebApi.DataContext;
 using ProgressusWebApi.Dtos.EjercicioDtos.EjercicioDto;
 using ProgressusWebApi.Models.EjercicioModels;
 using ProgressusWebApi.Services.EjercicioServices.Interfaces;
@@ -12,12 +14,59 @@ namespace ProgressusWebApi.Controllers.EjercicioControllers
     {
         private readonly IEjercicioService _ejercicioService;
         private readonly IMusculoDeEjercicioService _musculoDeEjercicioService;
+        private readonly ProgressusDataContext _progressusDataContext;
 
-        public EjercicioController(IEjercicioService ejercicioService, IMusculoDeEjercicioService musculoDeEjercicioService)
+        public EjercicioController(IEjercicioService ejercicioService, IMusculoDeEjercicioService musculoDeEjercicioService, ProgressusDataContext progressusDataContext)
         {
             _ejercicioService = ejercicioService;
             _musculoDeEjercicioService = musculoDeEjercicioService;
+            _progressusDataContext = progressusDataContext;
         }
+
+        [HttpPut("ActualizarMusculosDeEjercicio(PARCHE)")]
+        public async Task<IActionResult> Prueba([FromBody] AgregarQuitarMusculoAEjercicioDto agregarQuitarMusculoAEjercicioDto)
+        {
+            int ejercicioId = agregarQuitarMusculoAEjercicioDto.EjercicioId;
+            var musculosActualesIds = await _progressusDataContext.MusculosDeEjercicios
+                                                .Where(me => me.EjercicioId == ejercicioId)
+                                                .Select(me => me.MusculoId)
+                                                .ToListAsync();
+
+            var musculosActualizadosIds = agregarQuitarMusculoAEjercicioDto.MusculosIds;
+
+            List<int> musculosParaAgregar = musculosActualizadosIds.Except(musculosActualesIds).ToList();
+            List<int> musculosParaEliminar = musculosActualesIds.Except(musculosActualizadosIds).ToList();
+
+            foreach (var musculoId in musculosParaAgregar)
+            {
+                MusculoDeEjercicio musculoAgregado = new MusculoDeEjercicio()
+                {
+                    MusculoId = musculoId,
+                    EjercicioId = ejercicioId
+                };
+                _progressusDataContext.Set<MusculoDeEjercicio>().Add(musculoAgregado);
+                await _progressusDataContext.SaveChangesAsync();
+            }
+
+            foreach (var musculoId in musculosParaEliminar)
+            {
+                MusculoDeEjercicio musculoEliminado = new MusculoDeEjercicio()
+                {
+                    MusculoId = musculoId,
+                    EjercicioId = ejercicioId
+                };
+                _progressusDataContext.Set<MusculoDeEjercicio>().Remove(musculoEliminado);
+                await _progressusDataContext.SaveChangesAsync();
+            }
+
+            var musculosActualizados = await _progressusDataContext.MusculosDeEjercicios
+                                                .Where(me => me.EjercicioId == ejercicioId)
+                                                .Select(me => me.MusculoId)
+                                                .ToListAsync();
+
+            return Ok(musculosActualizados);
+        }
+
 
         [HttpPost("CrearEjercicio")]
         public async Task<IActionResult> Crear([FromBody] CrearActualizarEjercicioDto ejercicio)
@@ -73,10 +122,10 @@ namespace ProgressusWebApi.Controllers.EjercicioControllers
             return Ok(ejercicioEliminado);
         }
 
-        [HttpPost("AgregarMusculosAEjercicio")]
-        public async Task<IActionResult> AgregarMusculosAEjercicio([FromBody]AgregarQuitarMusculoAEjercicioDto agregarQuitarMusculoAEjercicioDto)
+        [HttpPut("ActualizarMusculosDeEjercicio")]
+        public async Task<IActionResult> ActualizarMusculosDeEjercicio([FromBody]AgregarQuitarMusculoAEjercicioDto agregarQuitarMusculoAEjercicioDto)
         {
-            var resultado = _musculoDeEjercicioService.AgregarMusculoAEjercicio(agregarQuitarMusculoAEjercicioDto);
+            var resultado = _musculoDeEjercicioService.ActualizarMusculosDeEjercicio(agregarQuitarMusculoAEjercicioDto);
             if (resultado == null) return NotFound();
             return Ok();
         }

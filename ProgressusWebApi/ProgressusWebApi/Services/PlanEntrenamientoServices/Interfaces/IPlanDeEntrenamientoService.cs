@@ -1,17 +1,22 @@
 ﻿using ProgressusWebApi.Dtos.EjercicioDtos.EjercicioDto;
+using ProgressusWebApi.Dtos.PlanDeEntrenamientoDtos.PlanDeEntrenamiento;
+using ProgressusWebApi.Dtos.PlanDeEntrenamientoDtos.PlanDeEntrenamientoDto;
+using ProgressusWebApi.Migrations;
 using ProgressusWebApi.Model;
 
 namespace ProgressusWebApi.Services.PlanEntrenamientoServices.Interfaces
 {
     public interface IPlanDeEntrenamientoService
     {
-        Task<PlanDeEntrenamiento> Crear(PlanDeEntrenamiento plan);
-        Task<PlanDeEntrenamiento> ObtenerPlanAsginado(int socioId);
-        Task<PlanDeEntrenamiento> Actualizar(int id, PlanDeEntrenamiento planActualizado);
-        Task<PlanDeEntrenamiento> Eliminar(int id);
+        Task<PlanDeEntrenamiento> Crear(CrearPlanDeEntrenamientoDto planCreadoDto);
+        Task<PlanDeEntrenamiento> Actualizar(int id, ActualizarPlanDeEntrenamientoDto planActualizadoDto);
+        Task<bool> Eliminar(int id);
         Task<List<PlanDeEntrenamiento>> ObtenerPlantillasDePlanes();
-        Task<List<PlanDeEntrenamiento>> ObtenerHistorialDePlanesAsignados(int socioId);
-        Task<PlanDeEntrenamiento> AgregarEjercicio(AgregarQuitarMusculoAEjercicioDto ejercicio);
-        Task<PlanDeEntrenamiento> QuitarEjercicio(AgregarQuitarMusculoAEjercicioDto ejercicio);
+        Task<PlanDeEntrenamiento> ActualizarEjerciciosDelPlan(int id, AgregarQuitarEjerciciosAPlanDto ejerciciosActualizados);
+        Task<PlanDeEntrenamiento> ConvertirEnPlantilla(int id);
+        Task<PlanDeEntrenamiento> QuitarConvertirEnPlantilla(int id);
+        Task<PlanDeEntrenamiento> ObtenerPorId(int id);
+        Task<List<PlanDeEntrenamiento>> ObtenerPorObjetivo(int objetivoDelPlanId);
+        Task<List<PlanDeEntrenamiento>> ObtenerPorNombre(string nombre);
     }
 }

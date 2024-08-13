@@ -3,8 +3,76 @@
   "WorkspaceRootPath": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\controllers\\ejerciciocontrollers\\musculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\controllers\\ejerciciocontrollers\\musculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\dbcontext\\progressusdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\dbcontext\\progressusdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\plandeentrenamientorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\planentrenamientorepositories\\plandeentrenamientorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\ejerciciorepositories\\ejerciciorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\ejerciciorepositories\\ejerciciorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\models\\cobromodels\\estadosolicituddepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\models\\cobromodels\\estadosolicituddepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\models\\cobromodels\\solicituddepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\models\\cobromodels\\solicituddepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\models\\cobromodels\\membresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\models\\cobromodels\\membresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\models\\cobromodels\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\models\\cobromodels\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\controllers\\planentrenamientocontrollers\\plandeentrenamientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\controllers\\planentrenamientocontrollers\\plandeentrenamientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\services\\planentrenamientoservices\\plandeentrenamientoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\services\\planentrenamientoservices\\plandeentrenamientoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\services\\planentrenamientoservices\\interfaces\\iplandeentrenamientoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\services\\planentrenamientoservices\\interfaces\\iplandeentrenamientoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\interfaces\\iplandeentrenamientorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\planentrenamientorepositories\\interfaces\\iplandeentrenamientorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\diadeplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\planentrenamientorepositories\\diadeplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\models\\planentrenamientomodels\\diadeplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\models\\planentrenamientomodels\\diadeplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\interfaces\\iejercicioendiadelplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\planentrenamientorepositories\\interfaces\\iejercicioendiadelplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\models\\planentrenamientomodels\\ejercicioendiadelplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\models\\planentrenamientomodels\\ejercicioendiadelplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\ingenier\u00EDa en sistemas\\proyecto final\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\ejercicioendiadelplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\planentrenamientorepositories\\ejercicioendiadelplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +82,247 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PlanDeEntrenamientoController.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\PlanEntrenamientoControllers\\PlanDeEntrenamientoController.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Controllers\\PlanEntrenamientoControllers\\PlanDeEntrenamientoController.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\PlanEntrenamientoControllers\\PlanDeEntrenamientoController.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Controllers\\PlanEntrenamientoControllers\\PlanDeEntrenamientoController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAYwEAAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:39:15.713Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlanDeEntrenamientoRepository.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\PlanDeEntrenamientoRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\PlanDeEntrenamientoRepository.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\PlanDeEntrenamientoRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\PlanDeEntrenamientoRepository.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwCIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:39:32.507Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PlanDeEntrenamientoService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\PlanEntrenamientoServices\\PlanDeEntrenamientoService.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Services\\PlanEntrenamientoServices\\PlanDeEntrenamientoService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\PlanEntrenamientoServices\\PlanDeEntrenamientoService.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Services\\PlanEntrenamientoServices\\PlanDeEntrenamientoService.cs",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAwwIIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:28:31.318Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MusculoController.cs",
-              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\EjercicioControllers\\MusculoController.cs",
-              "RelativeDocumentMoniker": "ProgressusWebApi\\Controllers\\EjercicioControllers\\MusculoController.cs",
-              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\EjercicioControllers\\MusculoController.cs",
-              "RelativeToolTip": "ProgressusWebApi\\Controllers\\EjercicioControllers\\MusculoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "DocumentIndex": 4,
+              "Title": "EjercicioRepository.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\EjercicioRepositories\\EjercicioRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\EjercicioRepositories\\EjercicioRepository.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\EjercicioRepositories\\EjercicioRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\EjercicioRepositories\\EjercicioRepository.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAkwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T08:12:15.246Z",
+              "WhenOpened": "2024-08-05T07:03:27.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProgressusDataContext.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\DbContext\\ProgressusDataContext.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\DbContext\\ProgressusDataContext.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\DbContext\\ProgressusDataContext.cs",
+              "RelativeToolTip": "ProgressusWebApi\\DbContext\\ProgressusDataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T06:54:08.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Program.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Program.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T06:44:08.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\appsettings.json",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\appsettings.json",
+              "RelativeToolTip": "ProgressusWebApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-02T06:51:20.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Socio.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\Socio.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Models\\CobroModels\\Socio.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\Socio.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Models\\CobroModels\\Socio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBZwA0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T00:55:15.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EstadoSolicitudDePago.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\EstadoSolicitudDePago.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Models\\CobroModels\\EstadoSolicitudDePago.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\EstadoSolicitudDePago.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Models\\CobroModels\\EstadoSolicitudDePago.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T00:54:22.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Membresia.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\Membresia.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Models\\CobroModels\\Membresia.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\Membresia.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Models\\CobroModels\\Membresia.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T00:53:58.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SolicitudDePago.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\SolicitudDePago.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Models\\CobroModels\\SolicitudDePago.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\SolicitudDePago.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Models\\CobroModels\\SolicitudDePago.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T00:55:34.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IPlanDeEntrenamientoService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\PlanEntrenamientoServices\\Interfaces\\IPlanDeEntrenamientoService.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Services\\PlanEntrenamientoServices\\Interfaces\\IPlanDeEntrenamientoService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\PlanEntrenamientoServices\\Interfaces\\IPlanDeEntrenamientoService.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Services\\PlanEntrenamientoServices\\Interfaces\\IPlanDeEntrenamientoService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBMAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T00:42:20.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IPlanDeEntrenamientoRepository.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IPlanDeEntrenamientoRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IPlanDeEntrenamientoRepository.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IPlanDeEntrenamientoRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IPlanDeEntrenamientoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T00:37:21.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DiaDePlanRepository.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\DiaDePlanRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\DiaDePlanRepository.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\DiaDePlanRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\DiaDePlanRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBZwBQAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T13:09:18.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IEjercicioEnDiaDelPlanRepository.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IEjercicioEnDiaDelPlanRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IEjercicioEnDiaDelPlanRepository.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IEjercicioEnDiaDelPlanRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IEjercicioEnDiaDelPlanRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:34:34.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DiaDePlan.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Models\\PlanEntrenamientoModels\\DiaDePlan.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Models\\PlanEntrenamientoModels\\DiaDePlan.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Models\\PlanEntrenamientoModels\\DiaDePlan.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Models\\PlanEntrenamientoModels\\DiaDePlan.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:30:15.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EjercicioEnDiaDelPlan.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Models\\PlanEntrenamientoModels\\EjercicioEnDiaDelPlan.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Models\\PlanEntrenamientoModels\\EjercicioEnDiaDelPlan.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Models\\PlanEntrenamientoModels\\EjercicioEnDiaDelPlan.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Models\\PlanEntrenamientoModels\\EjercicioEnDiaDelPlan.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAowB4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:30:17.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EjercicioEnDiaDelPlanRepository.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\EjercicioEnDiaDelPlanRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\EjercicioEnDiaDelPlanRepository.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\EjercicioEnDiaDelPlanRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\EjercicioEnDiaDelPlanRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T10:05:09.127Z",
               "EditorCaption": ""
             }
           ]

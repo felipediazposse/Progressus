@@ -9,30 +9,67 @@ namespace ProgressusWebApi.Repositories.PlanEntrenamientoRepositories
     public class AsignacionDePlanRepository : IAsignacionDePlanRepository
     {
         private readonly ProgressusDataContext _context;
-
         public AsignacionDePlanRepository(ProgressusDataContext context)
         {
             _context = context;
         }
 
-        public Task<AsignacionDePlan?> AsignarPlan(string socioId, int planEntrenamientoId)
+        public async Task<AsignacionDePlan?> AsignarPlan(string socioId, int planEntrenamientoId)
         {
-            throw new NotImplementedException();
+            // Verificar si ya existe una asignación vigente para el socio
+            var asignacionExistente = await _context.AsignacionesDePlanes
+                .FirstOrDefaultAsync(ap => ap.SocioId == socioId && ap.PlanDeEntrenamientoId == planEntrenamientoId);
+
+            if (asignacionExistente != null)
+            {
+                // Actualizar la vigencia de la asignación existente
+                asignacionExistente.esVigente = true;
+                await _context.SaveChangesAsync();
+                return asignacionExistente;
+            }
+            else
+            {
+                // Crear una nueva asignación
+                var nuevaAsignacion = new AsignacionDePlan
+                {
+                    SocioId = socioId,
+                    PlanDeEntrenamientoId = planEntrenamientoId,
+                    esVigente = true,
+                    fechaDeAsginacion = DateTime.Now
+                };
+
+                _context.AsignacionesDePlanes.Add(nuevaAsignacion);
+                await _context.SaveChangesAsync();
+                return nuevaAsignacion;
+            }
         }
 
-        public Task<List<AsignacionDePlan>> ObtenerHistorialDePlanesAsignados(string socioId)
+        public async Task<List<AsignacionDePlan>> ObtenerHistorialDePlanesAsignados(string socioId)
         {
-            throw new NotImplementedException();
+            return await _context.AsignacionesDePlanes
+                .Where(ap => ap.SocioId == socioId)
+                .OrderByDescending(ap => ap.fechaDeAsginacion)
+                .ToListAsync();
         }
 
-        public Task<AsignacionDePlan> ObtenerPlanAsignado(string socioId)
+        public async Task<AsignacionDePlan?> ObtenerPlanAsignado(string socioId)
         {
-            throw new NotImplementedException();
+            return await _context.AsignacionesDePlanes
+                .FirstOrDefaultAsync(ap => ap.SocioId == socioId && ap.esVigente);
         }
 
-        public Task<AsignacionDePlan?> QuitarAsignacionDePlan(string socioId, int planDeEntrenamientoId)
+        public async Task<AsignacionDePlan?> QuitarAsignacionDePlan(string socioId, int planDeEntrenamientoId)
         {
-            throw new NotImplementedException();
+            var asignacionExistente = await _context.AsignacionesDePlanes
+                .FirstOrDefaultAsync(ap => ap.SocioId == socioId && ap.PlanDeEntrenamientoId == planDeEntrenamientoId);
+
+            if (asignacionExistente != null)
+            {
+                asignacionExistente.esVigente = false;
+                await _context.SaveChangesAsync();
+            }
+
+            return asignacionExistente;
         }
     }
 }

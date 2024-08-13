@@ -10,41 +10,39 @@ namespace ProgressusWebApi.Services.EjercicioServices
     public class MusculoDeEjercicioService : IMusculoDeEjercicioService
     {
         private readonly IMusculoDeEjercicioRepository _musculoDeEjercicioRepository;
-        public MusculoDeEjercicioService(IMusculoDeEjercicioRepository musculoDeEjercicioRepository)
+        private readonly IEjercicioRepository _ejercicioRepository;
+        public MusculoDeEjercicioService(IMusculoDeEjercicioRepository musculoDeEjercicioRepository, IEjercicioRepository ejercicioRepository)
         {
             _musculoDeEjercicioRepository = musculoDeEjercicioRepository;
+            _ejercicioRepository = ejercicioRepository;
         }
 
-        public async Task<IActionResult> AgregarMusculoAEjercicio(AgregarQuitarMusculoAEjercicioDto agregarQuitarMusculoAEjercicioDto)
+        public async Task<IActionResult> ActualizarMusculosDeEjercicio(AgregarQuitarMusculoAEjercicioDto agregarQuitarMusculoAEjercicioDto)
         {
-            List<MusculoDeEjercicio> musculosAgregados = new List<MusculoDeEjercicio>();
-            for (int i = 0; i < agregarQuitarMusculoAEjercicioDto.MusculosIds.Count; i++)
-            {
-                MusculoDeEjercicio musculoDeEjercicio = new MusculoDeEjercicio()
-                {
-                    MusculoId = agregarQuitarMusculoAEjercicioDto.MusculosIds[i],
-                    EjercicioId = agregarQuitarMusculoAEjercicioDto.EjercicioId,
-                };
-                await _musculoDeEjercicioRepository.AgregarMusculoAEjercicio(musculoDeEjercicio);
-                musculosAgregados.Add(musculoDeEjercicio);
-            }
-            return new OkObjectResult(musculosAgregados);
-        }
+            int ejercicioId = agregarQuitarMusculoAEjercicioDto.EjercicioId;
+            List<int> musculosActualesIds = await _musculoDeEjercicioRepository.ObtenerIdsDeMusculosDeEjercicio(ejercicioId);
+            List<int> musculosActualizadosIds = agregarQuitarMusculoAEjercicioDto.MusculosIds;
 
-        public async Task<IActionResult> QuitarMusculoAEjercicio(AgregarQuitarMusculoAEjercicioDto agregarQuitarMusculoAEjercicioDto)
-        {
-            List<MusculoDeEjercicio> musculosQuitados = new List<MusculoDeEjercicio>();
-            for (int i = 0; i < agregarQuitarMusculoAEjercicioDto.MusculosIds.Count; i++)
+            List<int> musculosParaAgregar = musculosActualizadosIds.Except(musculosActualesIds).ToList();
+            List<int> musculosParaEliminar = musculosActualesIds.Except(musculosActualizadosIds).ToList();
+
+            foreach (var musculoId in musculosParaAgregar)
             {
-                MusculoDeEjercicio musculoDeEjercicio = new MusculoDeEjercicio()
+                MusculoDeEjercicio musculoAgregado = new MusculoDeEjercicio()
                 {
-                    MusculoId = agregarQuitarMusculoAEjercicioDto.MusculosIds[i],
-                    EjercicioId = agregarQuitarMusculoAEjercicioDto.EjercicioId,
+                    MusculoId = musculoId,
+                    EjercicioId = ejercicioId
                 };
-                await _musculoDeEjercicioRepository.QuitarMusculoAEjercicio(musculoDeEjercicio);
-                musculosQuitados.Add(musculoDeEjercicio);
+                await _musculoDeEjercicioRepository.AgregarMusculoAEjercicio(musculoAgregado);
             }
-            return new OkObjectResult(musculosQuitados);
+
+            foreach (var musculoId in musculosParaEliminar)
+            {
+                await _musculoDeEjercicioRepository.QuitarMusculoAEjercicio(ejercicioId, musculoId);
+            }
+
+            var musculosActualizados = await _musculoDeEjercicioRepository.ObtenerIdsDeMusculosDeEjercicio(agregarQuitarMusculoAEjercicioDto.EjercicioId);
+            return new OkObjectResult(musculosActualizados);
         }
     }
 }

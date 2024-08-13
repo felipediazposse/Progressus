@@ -9,7 +9,6 @@ namespace ProgressusWebApi.DataContext
     public class ProgressusDataContext : IdentityDbContext
     {
         public ProgressusDataContext(DbContextOptions<ProgressusDataContext> options) : base(options) { }
-
         public DbSet<PlanDeEntrenamiento> PlanesDeEntrenamiento { get; set; }
         public DbSet<DiaDePlan> DiasDePlan { get; set; }
         public DbSet<EjercicioEnDiaDelPlan> EjerciciosDelDia { get; set; }
@@ -74,10 +73,10 @@ namespace ProgressusWebApi.DataContext
                 .WithMany(gm => gm.MusculosDelGrupo)
                 .HasForeignKey(m => m.GrupoMuscularId);
 
-            modelBuilder.Entity<AsignacionDePlan>()
-                .HasOne(ap => ap.Socio)
-                .WithMany()
-                .HasForeignKey(ap => ap.SocioId);
+            //modelBuilder.Entity<AsignacionDePlan>()
+                //.HasOne(ap => ap.Socio)
+                //.WithMany()
+                //.HasForeignKey(ap => ap.SocioId);
 
             modelBuilder.Entity<AsignacionDePlan>()
                 .HasOne(ap => ap.PlanDeEntrenamiento)

@@ -11,5 +11,6 @@ namespace ProgressusWebApi.Repositories.EjercicioRepositories.Interfaces
         Task<Ejercicio?> Eliminar(int id);
         Task<List<Ejercicio?>> ObtenerPorGrupoMuscular(int grupoMuscularId);
         Task<List<Ejercicio?>> ObtenerPorMusculo(int musculoId);
+
     }
 }

@@ -17,6 +17,11 @@ using ProgressusWebApi.Repositories.EjercicioRepositories;
 using ProgressusWebApi.Repositories.EjercicioRepositories.Interfaces;
 using ProgressusWebApi.Services.EjercicioServices.Interfaces;
 using ProgressusWebApi.Services.EjercicioServices;
+using ProgressusWebApi.Repositories.Interfaces;
+using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories;
+using ProgressusWebApi.Services.PlanEntrenamientoServices.Interfaces;
+using ProgressusWebApi.Services.PlanEntrenamientoServices;
+using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,8 +38,19 @@ builder.Services.AddScoped<IEjercicioRepository, EjercicioRepository>();
 builder.Services.AddScoped<IEjercicioService, EjercicioService>();
 builder.Services.AddScoped<IMusculoDeEjercicioRepository, MusculoDeEjercicioRepository>();
 builder.Services.AddScoped<IMusculoDeEjercicioService, MusculoDeEjercicioService>();
+builder.Services.AddScoped<IMusculoRepository, MusculoRepository>();
+builder.Services.AddScoped<IMusculoService, MusculoService>();
 builder.Services.AddScoped<IGrupoMuscularRepository, GrupoMuscularRepository>();
 builder.Services.AddScoped<IGrupoMuscularService, GrupoMuscularService>();
+builder.Services.AddScoped<IPlanDeEntrenamientoRepository, PlanDeEntrenamientoRepository>();
+builder.Services.AddScoped<IPlanDeEntrenamientoService, PlanDeEntrenamientoService>();
+builder.Services.AddScoped<IDiaDePlanRepository, DiaDePlanRepository>();
+builder.Services.AddScoped<IEjercicioEnDiaDelPlanRepository, EjercicioEnDiaDelPlanRepository>();
+builder.Services.AddScoped<IObjetivoDelPlanRepository, ObjetivoDelPlanRepository>();
+builder.Services.AddScoped<ISerieDeEjercicioRepository, SerieDeEjercicioRepository>();
+builder.Services.AddScoped<IObjetivoDelPlanService, ObjetivoDelPlanService>();
+builder.Services.AddScoped<IAsignacionDePlanRepository, AsignacionDePlanRepository>();
+builder.Services.AddScoped<IAsignacionDePlanService, AsignacionDePlanService>();
 builder.Services.AddMemoryCache();
 
 // Permitir documentación y acceso de los endpoints con swagger

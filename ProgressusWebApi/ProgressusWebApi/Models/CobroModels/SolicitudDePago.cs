@@ -7,6 +7,8 @@
         public int CompradorId { get; set; }
         public EstadoSolicitudDePago? EstadoSolicitudDePago { get; set; }
         public int EstadoSolicitudDePagoId { get; set; }
-        public List<ItemDeCompra>? ItemsDeCompra { get; set; }
+        public Membresia TipoMembresia { get; set; }
+        public int TipoMembresiaId { get; set; }
+        public List<EstadoSolicitudDePago> HistorialEstadoSolicitudDePago { get; set; }
     }
 }
