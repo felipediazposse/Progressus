@@ -48,7 +48,7 @@ export class RegisterComponent implements OnInit {
         }
 
         this.submitting = true;
-        this.accountService.register(this.form.value)
+        this.accountService.register(this.f.email.value, this.f.password.value)
             .pipe(first())
             .subscribe({
                 next: () => {

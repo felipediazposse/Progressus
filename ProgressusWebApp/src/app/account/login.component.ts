@@ -29,6 +29,10 @@ export class LoginComponent implements OnInit {
     // convenience getter for easy access to form fields
     get f() { return this.form.controls; }
 
+    // enviarCodigo(){
+    //     this.accountService.sentCode(this.f.email.value)
+    // }
+
     onSubmit() {
         this.submitted = true;
 
@@ -41,7 +45,8 @@ export class LoginComponent implements OnInit {
         }
 
         this.submitting = true;
-        this.accountService.login(this.f.email.value, this.f.password.value)
+        this.accountService.sentCode(this.f.email.value)
+        // this.accountService.login(this.f.email.value, this.f.password.value)
             .pipe(first())
             .subscribe({
                 next: () => {
