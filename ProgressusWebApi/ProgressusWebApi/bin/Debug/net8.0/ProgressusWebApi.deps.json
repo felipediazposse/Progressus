@@ -15,7 +15,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "8.0.7",
           "Swashbuckle.AspNetCore": "6.4.0",
           "Swashbuckle.AspNetCore.Filters": "8.0.2",
-          "mercadopago-sdk": "2.3.8"
+          "mercadopago-sdk": "2.4.0"
         },
         "runtime": {
           "ProgressusWebApi.dll": {}
@@ -63,15 +63,15 @@
           }
         }
       },
-      "mercadopago-sdk/2.3.8": {
+      "mercadopago-sdk/2.4.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
           "System.Configuration.ConfigurationManager": "6.0.1"
         },
         "runtime": {
-          "lib/net5.0/MercadoPago.dll": {
-            "assemblyVersion": "2.3.8.0",
-            "fileVersion": "2.3.8.0"
+          "lib/net6.0/MercadoPago.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
           }
         }
       },
@@ -1092,12 +1092,12 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
-    "mercadopago-sdk/2.3.8": {
+    "mercadopago-sdk/2.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-W41OcPd5ha0H0dwfYQHWTDM/445Uoac4LMpOzc2i9eZx0BoycTAqSFOvxWk90dYix2ZaVifcAPUCpESGXJDrqQ==",
-      "path": "mercadopago-sdk/2.3.8",
-      "hashPath": "mercadopago-sdk.2.3.8.nupkg.sha512"
+      "sha512": "sha512-oxTbSkn3EAkIu5FSFU6XgWgmx+bxsOleOdpKO+FcO76XN4wqvcFpqU2P095EsyzOfWUp5nqt6wrzv+FPTQf2vA==",
+      "path": "mercadopago-sdk/2.4.0",
+      "hashPath": "mercadopago-sdk.2.4.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/8.0.7": {
       "type": "package",

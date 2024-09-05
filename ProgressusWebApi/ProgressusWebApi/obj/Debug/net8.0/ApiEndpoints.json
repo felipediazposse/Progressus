@@ -1,0 +1,1029 @@
+[
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.AsignacionDePlanController",
+    "Method": "AsignarPlanDeEntrenamiento",
+    "RelativePath": "api/AsignacionDePlan/AsignarPlanDeEntrenamiento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "socioId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "planId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.AsignacionDePlanController",
+    "Method": "ObtenerHistorialDePlanes",
+    "RelativePath": "api/AsignacionDePlan/ObtenerHistorialDePlanes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "socioId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.AsignacionDePlanController",
+    "Method": "ObtenerPlanAsignado",
+    "RelativePath": "api/AsignacionDePlan/ObtenerPlanAsignado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "socioId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.AsignacionDePlanController",
+    "Method": "QuitarAsignacionDePlanDeEntrenamiento",
+    "RelativePath": "api/AsignacionDePlan/QuitarAsignacionDePlanDeEntrenamiento",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "socioId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "planId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
+    "Method": "CambiarContrase\u00F1a",
+    "RelativePath": "api/Auth/CambiarContrase\u00F1a",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cambioDeContrase\u00F1aDto",
+        "Type": "ProgressusWebApi.Dtos.AuthDtos.CambioDeContrase\u00F1aDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
+    "Method": "ComprobarCodigoDeCambioContrase\u00F1a",
+    "RelativePath": "api/Auth/ComprobarCodigoDeCambioContrase\u00F1a",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigoDeVerificacion",
+        "Type": "ProgressusWebApi.Dtos.AuthDtos.CodigoDeVerificacionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
+    "Method": "ConfirmarCorreo",
+    "RelativePath": "api/Auth/ConfirmarCorreo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigoDeVerificacion",
+        "Type": "ProgressusWebApi.Dtos.AuthDtos.CodigoDeVerificacionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
+    "Method": "EnviarCodigoDeVerificacionDeCorreo",
+    "RelativePath": "api/Auth/EnviarCodigoDeVerificacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "correo",
+        "Type": "ProgressusWebApi.Dtos.AuthDtos.CorreoRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.EjercicioController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Ejercicio/ActualizarEjercicio",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ejercicio",
+        "Type": "ProgressusWebApi.Dtos.EjercicioDtos.EjercicioDto.CrearActualizarEjercicioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.EjercicioController",
+    "Method": "ActualizarMusculosDeEjercicio",
+    "RelativePath": "api/Ejercicio/ActualizarMusculosDeEjercicio",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agregarQuitarMusculoAEjercicioDto",
+        "Type": "ProgressusWebApi.Dtos.EjercicioDtos.EjercicioDto.AgregarQuitarMusculoAEjercicioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.EjercicioController",
+    "Method": "Prueba",
+    "RelativePath": "api/Ejercicio/ActualizarMusculosDeEjercicio(PARCHE)",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agregarQuitarMusculoAEjercicioDto",
+        "Type": "ProgressusWebApi.Dtos.EjercicioDtos.EjercicioDto.AgregarQuitarMusculoAEjercicioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.EjercicioController",
+    "Method": "Crear",
+    "RelativePath": "api/Ejercicio/CrearEjercicio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ejercicio",
+        "Type": "ProgressusWebApi.Dtos.EjercicioDtos.EjercicioDto.CrearActualizarEjercicioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.EjercicioController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Ejercicio/EliminarEjercicio",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.EjercicioController",
+    "Method": "ObtenerPorGrupoMuscular",
+    "RelativePath": "api/Ejercicio/ObtenerEjercicioPorGrupoMuscular",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grupoMuscularId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.EjercicioController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/Ejercicio/ObtenerEjercicioPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.EjercicioController",
+    "Method": "ObtenerPorMusculo",
+    "RelativePath": "api/Ejercicio/ObtenerEjercicioPorMusculo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grupoMuscularId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.EjercicioController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/Ejercicio/ObtenerTodosLosEjercicios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.GrupoMuscularController",
+    "Method": "Actualizar",
+    "RelativePath": "api/GrupoMuscular/ActualizarGrupoMuscular",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "grupoMuscular",
+        "Type": "ProgressusWebApi.Dtos.EjercicioDtos.GrupoMuscularDto.CrearActualizarGrupoMuscularDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.GrupoMuscularController",
+    "Method": "Crear",
+    "RelativePath": "api/GrupoMuscular/CrearGrupoMuscular",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grupoMuscular",
+        "Type": "ProgressusWebApi.Dtos.EjercicioDtos.GrupoMuscularDto.CrearActualizarGrupoMuscularDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.GrupoMuscularController",
+    "Method": "Eliminar",
+    "RelativePath": "api/GrupoMuscular/EliminarGrupoMuscular",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.GrupoMuscularController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/GrupoMuscular/ObtenerGrupoMuscularPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grupoMuscularId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.GrupoMuscularController",
+    "Method": "ObtenerPorMusculo",
+    "RelativePath": "api/GrupoMuscular/ObtenerGrupoMuscularPorNombre",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.GrupoMuscularController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/GrupoMuscular/ObtenerTodosLosGruposMusculares",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.CobroControllers.MercadoPagoController",
+    "Method": "CreatePreferenceAsync",
+    "RelativePath": "api/MercadoPago/CrearSolicitudDePago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "preference",
+        "Type": "MercadoPago.Client.Preference.PreferenceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.MusculoController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Musculo/ActualizarMusculo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "musculo",
+        "Type": "ProgressusWebApi.Dtos.EjercicioDtos.MusculoDto.CrearActualizarMusculoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.MusculoController",
+    "Method": "Crear",
+    "RelativePath": "api/Musculo/CrearMusculo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "musculo",
+        "Type": "ProgressusWebApi.Dtos.EjercicioDtos.MusculoDto.CrearActualizarMusculoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.MusculoController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Musculo/EliminarMusculo",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.MusculoController",
+    "Method": "ObtenerPorGrupoMuscular",
+    "RelativePath": "api/Musculo/ObtenerMusculoPorGrupoMuscular",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grupoMuscularId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.MusculoController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/Musculo/ObtenerMusculoPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "musculoId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.MusculoController",
+    "Method": "ObtenerPorMusculo",
+    "RelativePath": "api/Musculo/ObtenerMusculoPorNombre",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.EjercicioControllers.MusculoController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/Musculo/ObtenerTodosLosMusculos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.ObjetivoDePlanController",
+    "Method": "Crear",
+    "RelativePath": "api/ObjetivoDePlan/CrearEjercicio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objetivoDePlanDto",
+        "Type": "ProgressusWebApi.Dtos.PlanDeEntrenamientoDtos.ObjetivoDePlanDto.CrearObjetivoDePlanDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.ObjetivoDePlanController",
+    "Method": "Eliminar",
+    "RelativePath": "api/ObjetivoDePlan/EliminarObjetivo",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.ObjetivoDePlanController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/ObjetivoDePlan/ObtenerObjetivoPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.ObjetivoDePlanController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/ObjetivoDePlan/ObtenerTodosLosObjetivos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "ActualizarEjerciciosDelPlan",
+    "RelativePath": "api/PlanDeEntrenamiento/ActualizarEjerciciosDelPlan",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "planId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ejerciciosEnPlanDto",
+        "Type": "ProgressusWebApi.Dtos.PlanDeEntrenamientoDtos.PlanDeEntrenamiento.AgregarQuitarEjerciciosAPlanDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "ActualizarPlanDeEntrenamiento",
+    "RelativePath": "api/PlanDeEntrenamiento/ActualizarPlanDeEntrenamiento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "planDto",
+        "Type": "ProgressusWebApi.Dtos.PlanDeEntrenamientoDtos.PlanDeEntrenamientoDto.ActualizarPlanDeEntrenamientoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "ConvertirEnPlantilla",
+    "RelativePath": "api/PlanDeEntrenamiento/ConvertirPlanEnPlantilla",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "CrearPlanDeEntrenamiento",
+    "RelativePath": "api/PlanDeEntrenamiento/CrearPlanDeEntrenamiento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "planDto",
+        "Type": "ProgressusWebApi.Dtos.PlanDeEntrenamientoDtos.PlanDeEntrenamientoDto.CrearPlanDeEntrenamientoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "EliminarPlanDeEntrenamiento",
+    "RelativePath": "api/PlanDeEntrenamiento/EliminarPlanDeEntrenamiento",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "ObtenerPlanesPlantillas",
+    "RelativePath": "api/PlanDeEntrenamiento/ObtenerPlanesPlantillas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "ObtenerPlanPorId",
+    "RelativePath": "api/PlanDeEntrenamiento/ObtenerPlanPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "ObtenerPorNombre",
+    "RelativePath": "api/PlanDeEntrenamiento/ObtenerPorNombre",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "ObtenerPorObjetivoDePlan",
+    "RelativePath": "api/PlanDeEntrenamiento/ObtenerPorObjetivoDePlan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objetivoDePlanId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "QuitarConvertirEnPlantilla",
+    "RelativePath": "api/PlanDeEntrenamiento/QuitarConvertirPlanEnPlantilla",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__1\u00601[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+    "Method": "\u003CMapIdentityApi\u003Eb__1_3",
+    "RelativePath": "confirmEmail",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "changedEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "MapIdentityApi-/confirmEmail"
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__DisplayClass1_0\u00601[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+    "Method": "\u003CMapIdentityApi\u003Eb__6",
+    "RelativePath": "forgotPassword",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resetRequest",
+        "Type": "Microsoft.AspNetCore.Identity.Data.ForgotPasswordRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Http.HttpValidationProblemDetails",
+        "MediaTypes": [
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__1\u00601[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+    "Method": "\u003CMapIdentityApi\u003Eb__1_1",
+    "RelativePath": "login",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
+        "IsRequired": false
+      },
+      {
+        "Name": "useCookies",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "useSessionCookies",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__1\u00601[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+    "Method": "\u003CMapIdentityApi\u003Eb__1_8",
+    "RelativePath": "manage/2fa",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tfaRequest",
+        "Type": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Http.HttpValidationProblemDetails",
+        "MediaTypes": [
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__1\u00601[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+    "Method": "\u003CMapIdentityApi\u003Eb__1_9",
+    "RelativePath": "manage/info",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Identity.Data.InfoResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Http.HttpValidationProblemDetails",
+        "MediaTypes": [
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__DisplayClass1_0\u00601[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+    "Method": "\u003CMapIdentityApi\u003Eb__10",
+    "RelativePath": "manage/info",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "infoRequest",
+        "Type": "Microsoft.AspNetCore.Identity.Data.InfoRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Identity.Data.InfoResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Http.HttpValidationProblemDetails",
+        "MediaTypes": [
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__DisplayClass1_0\u00601[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+    "Method": "\u003CMapIdentityApi\u003Eb__2",
+    "RelativePath": "refresh",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "refreshRequest",
+        "Type": "Microsoft.AspNetCore.Identity.Data.RefreshRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__DisplayClass1_0\u00601[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+    "Method": "\u003CMapIdentityApi\u003Eb__0",
+    "RelativePath": "register",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registration",
+        "Type": "Microsoft.AspNetCore.Identity.Data.RegisterRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Http.HttpValidationProblemDetails",
+        "MediaTypes": [
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__DisplayClass1_0\u00601[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+    "Method": "\u003CMapIdentityApi\u003Eb__5",
+    "RelativePath": "resendConfirmationEmail",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resendRequest",
+        "Type": "Microsoft.AspNetCore.Identity.Data.ResendConfirmationEmailRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__1\u00601[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+    "Method": "\u003CMapIdentityApi\u003Eb__1_7",
+    "RelativePath": "resetPassword",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resetRequest",
+        "Type": "Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Http.HttpValidationProblemDetails",
+        "MediaTypes": [
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  }
+]

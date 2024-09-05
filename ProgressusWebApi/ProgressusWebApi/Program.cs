@@ -26,10 +26,21 @@ using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories.Interfaces;
 var builder = WebApplication.CreateBuilder(args);
 
 // Agregar los servicios al contenedor
-// Configuración para ignorar referencias cíclicas en la serialización JSON
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
 {
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+});
+
+// Configuración de CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", builder =>
+    {
+        builder.WithOrigins("http://localhost:4200")
+               .AllowAnyHeader()
+               .AllowAnyMethod()
+               .AllowCredentials();
+    });
 });
 
 // Inyección de repositorios y servicios
@@ -54,7 +65,6 @@ builder.Services.AddScoped<IAsignacionDePlanService, AsignacionDePlanService>();
 builder.Services.AddMemoryCache();
 
 // Permitir documentación y acceso de los endpoints con swagger
-// Configuración con oauth2 para requerir autorización en la ejecución de los endpoints 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -86,7 +96,8 @@ builder.Services.Configure<GmailSetter>(builder.Configuration.GetSection("GmailS
 
 // Configuración para sistema de cobros con MercadoPago
 builder.Services.AddScoped<IMercadoPagoRepository, MercadoPagoRepository>();
-builder.Services.AddScoped<IMercadoPagoService, MercadoPagoService>(); MercadoPagoConfig.AccessToken = "APP_USR-2278733141716614-062815-583c9779901a7bbf32c8e8a73971e44c-1878150528";
+builder.Services.AddScoped<IMercadoPagoService, MercadoPagoService>();
+MercadoPagoConfig.AccessToken = "APP_USR-2278733141716614-062815-583c9779901a7bbf32c8e8a73971e44c-1878150528";
 
 // Construir la aplicación con todas las configuraciones y servicios definidos en el objeto builder
 var app = builder.Build();
@@ -97,9 +108,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 // Mapear endpoints de authorization y authentication
 app.MapIdentityApi<IdentityUser>();
+
+// Usar la política de CORS
+app.UseCors("AllowFrontend");
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
