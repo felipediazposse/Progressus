@@ -2,12 +2,11 @@
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { map, finalize } from 'rxjs/operators';
-
+import { map, finalize, concatMap } from 'rxjs/operators';
 import { environment } from '@environments/environment';
 import { Account } from '@app/_models';
 
-const baseUrl = `${environment.apiUrl}/api`;
+const baseUrl = `${environment.apiUrl}`;
 
 @Injectable({ providedIn: 'root' })
 export class AccountService {
@@ -27,10 +26,10 @@ export class AccountService {
     }
 
     login(email: string, password: string) {
-        return this.http.post<any>(`${baseUrl}/authenticate`, { email, password }, { withCredentials: true })
+        return this.http.post<any>(`${baseUrl}/login`, { email, password }, { withCredentials: true })
             .pipe(map(account => {
                 this.accountSubject.next(account);
-                this.startRefreshTokenTimer();
+                // this.startRefreshTokenTimer();
                 return account;
             }));
     }
@@ -52,15 +51,19 @@ export class AccountService {
     }
 
     register(email: string, password: string) {
-        return this.http.post(`${baseUrl}/register`, { email, password });
+        return this.http.post(`${baseUrl}/register`, { email, password }).pipe(
+            concatMap(() =>
+              this.enviarCodigoDeVerificacion(email)
+            )
+          );
+    }
+
+    enviarCodigoDeVerificacion(email: string) {
+        return this.http.post(`${baseUrl}/api/Auth/EnviarCodigoDeVerificacion`, { email });
     }
 
     verifyEmail(token: string) {
         return this.http.post(`${baseUrl}/verify-email`, { token });
-    }
-    
-    sentCode(email: string) {
-        return this.http.post(`${baseUrl}/Auth/EnviarCodigoDeVerificacion`, { email });
     }
 
     forgotPassword(email: string) {
@@ -73,6 +76,10 @@ export class AccountService {
 
     resetPassword(token: string, password: string, confirmPassword: string) {
         return this.http.post(`${baseUrl}/reset-password`, { token, password, confirmPassword });
+    }
+
+    confirmarCorreo(codigo: string) {
+        return this.http.post(`${baseUrl}/ConfirmarCorreo`, { codigo });
     }
 
     getAll() {

@@ -6,10 +6,9 @@ import { first } from 'rxjs/operators';
 import { AccountService, AlertService } from '@app/_services';
 import { MustMatch } from '@app/_helpers';
 
-@Component({ 
-    templateUrl: 'register.component.html',
-    styleUrls: ['login.component.scss']
- })
+@Component({ templateUrl: 'register.component.html',
+             styleUrls: ['register.component.scss']
+})
 export class RegisterComponent implements OnInit {
     form!: FormGroup;
     submitting = false;
@@ -51,11 +50,12 @@ export class RegisterComponent implements OnInit {
         }
 
         this.submitting = true;
+        debugger;
         this.accountService.register(this.f.email.value, this.f.password.value)
             .pipe(first())
             .subscribe({
                 next: () => {
-                    this.alertService.success('Registration successful, please check your email for verification instructions', { keepAfterRouteChange: true });
+                    this.alertService.success('Registro exitoso, ingrese Codigo de Verificacion', { keepAfterRouteChange: true });
                     this.router.navigate(['../login'], { relativeTo: this.route });
                 },
                 error: error => {

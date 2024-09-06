@@ -1,31 +1,32 @@
+using MercadoPago.Config;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using ProgressusWebApi.DataContext;
-using ProgressusWebApi.Services.AuthServices;
+using ProgressusWebApi.Repositories.EjercicioRepositories.Interfaces;
+using ProgressusWebApi.Repositories.EjercicioRepositories;
+using ProgressusWebApi.Repositories.Interfaces;
+using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories.Interfaces;
+using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories;
 using ProgressusWebApi.Services.AuthServices.Interfaces;
-using ProgressusWebApi.Services.EmailServices;
+using ProgressusWebApi.Services.AuthServices;
+using ProgressusWebApi.Services.EjercicioServices.Interfaces;
+using ProgressusWebApi.Services.EjercicioServices;
 using ProgressusWebApi.Services.EmailServices.Interfaces;
+using ProgressusWebApi.Services.EmailServices;
+using ProgressusWebApi.Services.PlanEntrenamientoServices.Interfaces;
+using ProgressusWebApi.Services.PlanEntrenamientoServices;
 using ProgressusWebApi.Utilities;
 using Swashbuckle.AspNetCore.Filters;
 using WebApiMercadoPago.Repositories.Interface;
 using WebApiMercadoPago.Repositories;
 using WebApiMercadoPago.Services.Interface;
 using WebApiMercadoPago.Services;
-using MercadoPago.Config;
-using ProgressusWebApi.Repositories.EjercicioRepositories;
-using ProgressusWebApi.Repositories.EjercicioRepositories.Interfaces;
-using ProgressusWebApi.Services.EjercicioServices.Interfaces;
-using ProgressusWebApi.Services.EjercicioServices;
-using ProgressusWebApi.Repositories.Interfaces;
-using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories;
-using ProgressusWebApi.Services.PlanEntrenamientoServices.Interfaces;
-using ProgressusWebApi.Services.PlanEntrenamientoServices;
-using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Agregar los servicios al contenedor
+// Configuración para ignorar referencias cíclicas en la serialización JSON
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
 {
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
@@ -34,13 +35,14 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 // Configuración de CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend", builder =>
-    {
-        builder.WithOrigins("http://localhost:4200")
-               .AllowAnyHeader()
-               .AllowAnyMethod()
-               .AllowCredentials();
-    });
+    options.AddPolicy("AllowSpecificOrigin",
+       policyBuilder =>
+       {
+           policyBuilder.WithOrigins("http://localhost:4200")
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials();
+       });
 });
 
 // Inyección de repositorios y servicios
@@ -65,6 +67,7 @@ builder.Services.AddScoped<IAsignacionDePlanService, AsignacionDePlanService>();
 builder.Services.AddMemoryCache();
 
 // Permitir documentación y acceso de los endpoints con swagger
+// Configuración con oauth2 para requerir autorización en la ejecución de los endpoints 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -108,11 +111,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Aplicar la política de CORS
+app.UseCors("AllowSpecificOrigin");
+
+
 // Mapear endpoints de authorization y authentication
 app.MapIdentityApi<IdentityUser>();
-
-// Usar la política de CORS
-app.UseCors("AllowFrontend");
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
