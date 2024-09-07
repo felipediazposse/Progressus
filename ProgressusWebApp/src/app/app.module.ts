@@ -13,12 +13,16 @@ import { AppComponent } from './app.component';
 import { AlertComponent } from './_components';
 import { HomeComponent } from './home';
 
+import {MatIconModule} from '@angular/material/icon'
+
+
 @NgModule({
     imports: [
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
-        AppRoutingModule
+        AppRoutingModule,
+        MatIconModule
     ],
     declarations: [
         AppComponent,

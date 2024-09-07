@@ -1,77 +1,81 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\",
+  "WorkspaceRootPath": "C:\\ProgressuTesis\\ProgressusWebApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\dbcontext\\progressusdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\progressuswebapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\progressuswebapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\dbcontext\\progressusdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\dbcontext\\progressusdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\plandeentrenamientorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\plandeentrenamientorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\planentrenamientorepositories\\plandeentrenamientorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\repositories\\ejerciciorepositories\\ejerciciorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\repositories\\ejerciciorepositories\\ejerciciorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\ejerciciorepositories\\ejerciciorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\models\\cobromodels\\estadosolicituddepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\models\\cobromodels\\estadosolicituddepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\models\\cobromodels\\estadosolicituddepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\models\\cobromodels\\solicituddepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\models\\cobromodels\\solicituddepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\models\\cobromodels\\solicituddepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\models\\cobromodels\\membresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\models\\cobromodels\\membresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\models\\cobromodels\\membresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\models\\cobromodels\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\models\\cobromodels\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\models\\cobromodels\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\controllers\\planentrenamientocontrollers\\plandeentrenamientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\controllers\\planentrenamientocontrollers\\plandeentrenamientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\controllers\\planentrenamientocontrollers\\plandeentrenamientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\services\\planentrenamientoservices\\plandeentrenamientoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\services\\planentrenamientoservices\\plandeentrenamientoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\services\\planentrenamientoservices\\plandeentrenamientoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\services\\planentrenamientoservices\\interfaces\\iplandeentrenamientoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\services\\planentrenamientoservices\\interfaces\\iplandeentrenamientoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\services\\planentrenamientoservices\\interfaces\\iplandeentrenamientoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\interfaces\\iplandeentrenamientorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\interfaces\\iplandeentrenamientorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\planentrenamientorepositories\\interfaces\\iplandeentrenamientorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\diadeplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\diadeplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\planentrenamientorepositories\\diadeplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\models\\planentrenamientomodels\\diadeplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\models\\planentrenamientomodels\\diadeplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\models\\planentrenamientomodels\\diadeplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\interfaces\\iejercicioendiadelplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\interfaces\\iejercicioendiadelplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\planentrenamientorepositories\\interfaces\\iejercicioendiadelplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\models\\planentrenamientomodels\\ejercicioendiadelplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\models\\planentrenamientomodels\\ejercicioendiadelplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\models\\planentrenamientomodels\\ejercicioendiadelplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\users\\dell\\desktop\\progressus\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\ejercicioendiadelplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|c:\\progressutesis\\progressuswebapi\\progressuswebapi\\repositories\\planentrenamientorepositories\\ejercicioendiadelplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87CF973-A480-4033-8D6E-0B84C487C66B}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\planentrenamientorepositories\\ejercicioendiadelplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -82,15 +86,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "PlanDeEntrenamientoController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\PlanEntrenamientoControllers\\PlanDeEntrenamientoController.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\PlanEntrenamientoControllers\\PlanDeEntrenamientoController.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Controllers\\PlanEntrenamientoControllers\\PlanDeEntrenamientoController.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\PlanEntrenamientoControllers\\PlanDeEntrenamientoController.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\PlanEntrenamientoControllers\\PlanDeEntrenamientoController.cs",
               "RelativeToolTip": "ProgressusWebApi\\Controllers\\PlanEntrenamientoControllers\\PlanDeEntrenamientoController.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAYwEAAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -99,11 +103,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PlanDeEntrenamientoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\PlanDeEntrenamientoRepository.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\PlanDeEntrenamientoRepository.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\PlanDeEntrenamientoRepository.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\PlanDeEntrenamientoRepository.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\PlanDeEntrenamientoRepository.cs",
               "RelativeToolTip": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\PlanDeEntrenamientoRepository.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAYwCIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -112,11 +116,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "PlanDeEntrenamientoService.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Services\\PlanEntrenamientoServices\\PlanDeEntrenamientoService.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Services\\PlanEntrenamientoServices\\PlanDeEntrenamientoService.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Services\\PlanEntrenamientoServices\\PlanDeEntrenamientoService.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Services\\PlanEntrenamientoServices\\PlanDeEntrenamientoService.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Services\\PlanEntrenamientoServices\\PlanDeEntrenamientoService.cs",
               "RelativeToolTip": "ProgressusWebApi\\Services\\PlanEntrenamientoServices\\PlanDeEntrenamientoService.cs",
               "ViewState": "AQIAAHYAAAAAAAAAAAAwwIIAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -124,41 +128,29 @@
               "IsPinned": true
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProgressusWebApi.http",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi.http",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\ProgressusWebApi.http",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi.http",
+              "RelativeToolTip": "ProgressusWebApi\\ProgressusWebApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-09-06T20:36:12.702Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Program.cs",
-              "RelativeDocumentMoniker": "ProgressusWebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Program.cs",
-              "RelativeToolTip": "ProgressusWebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T06:44:08.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\appsettings.json",
-              "RelativeDocumentMoniker": "ProgressusWebApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\appsettings.json",
-              "RelativeToolTip": "ProgressusWebApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-02T06:51:20.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "EjercicioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\EjercicioRepositories\\EjercicioRepository.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\EjercicioRepositories\\EjercicioRepository.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\EjercicioRepositories\\EjercicioRepository.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\EjercicioRepositories\\EjercicioRepository.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\EjercicioRepositories\\EjercicioRepository.cs",
               "RelativeToolTip": "ProgressusWebApi\\Repositories\\EjercicioRepositories\\EjercicioRepository.cs",
               "ViewState": "AQIAACUAAAAAAAAAAAAkwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -166,11 +158,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\appsettings.json",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\appsettings.json*",
+              "RelativeToolTip": "ProgressusWebApi\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-02T06:51:20.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ProgressusDataContext.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\DbContext\\ProgressusDataContext.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\DbContext\\ProgressusDataContext.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\DbContext\\ProgressusDataContext.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\DbContext\\ProgressusDataContext.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\DbContext\\ProgressusDataContext.cs",
               "RelativeToolTip": "ProgressusWebApi\\DbContext\\ProgressusDataContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -178,11 +183,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Program.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Program.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T06:44:08.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Socio.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\Socio.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\Socio.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Models\\CobroModels\\Socio.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\Socio.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\Socio.cs",
               "RelativeToolTip": "ProgressusWebApi\\Models\\CobroModels\\Socio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBZwA0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -190,11 +208,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "EstadoSolicitudDePago.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\EstadoSolicitudDePago.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\EstadoSolicitudDePago.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Models\\CobroModels\\EstadoSolicitudDePago.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\EstadoSolicitudDePago.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\EstadoSolicitudDePago.cs",
               "RelativeToolTip": "ProgressusWebApi\\Models\\CobroModels\\EstadoSolicitudDePago.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -202,11 +220,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Membresia.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\Membresia.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\Membresia.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Models\\CobroModels\\Membresia.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\Membresia.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\Membresia.cs",
               "RelativeToolTip": "ProgressusWebApi\\Models\\CobroModels\\Membresia.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -214,11 +232,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SolicitudDePago.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\SolicitudDePago.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\SolicitudDePago.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Models\\CobroModels\\SolicitudDePago.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\SolicitudDePago.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Models\\CobroModels\\SolicitudDePago.cs",
               "RelativeToolTip": "ProgressusWebApi\\Models\\CobroModels\\SolicitudDePago.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -226,11 +244,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "IPlanDeEntrenamientoService.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Services\\PlanEntrenamientoServices\\Interfaces\\IPlanDeEntrenamientoService.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Services\\PlanEntrenamientoServices\\Interfaces\\IPlanDeEntrenamientoService.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Services\\PlanEntrenamientoServices\\Interfaces\\IPlanDeEntrenamientoService.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Services\\PlanEntrenamientoServices\\Interfaces\\IPlanDeEntrenamientoService.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Services\\PlanEntrenamientoServices\\Interfaces\\IPlanDeEntrenamientoService.cs",
               "RelativeToolTip": "ProgressusWebApi\\Services\\PlanEntrenamientoServices\\Interfaces\\IPlanDeEntrenamientoService.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAxwBMAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -238,11 +256,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IPlanDeEntrenamientoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IPlanDeEntrenamientoRepository.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IPlanDeEntrenamientoRepository.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IPlanDeEntrenamientoRepository.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IPlanDeEntrenamientoRepository.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IPlanDeEntrenamientoRepository.cs",
               "RelativeToolTip": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IPlanDeEntrenamientoRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -250,11 +268,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "DiaDePlanRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\DiaDePlanRepository.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\DiaDePlanRepository.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\DiaDePlanRepository.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\DiaDePlanRepository.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\DiaDePlanRepository.cs",
               "RelativeToolTip": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\DiaDePlanRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBZwBQAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -262,11 +280,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IEjercicioEnDiaDelPlanRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IEjercicioEnDiaDelPlanRepository.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IEjercicioEnDiaDelPlanRepository.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IEjercicioEnDiaDelPlanRepository.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IEjercicioEnDiaDelPlanRepository.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IEjercicioEnDiaDelPlanRepository.cs",
               "RelativeToolTip": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\Interfaces\\IEjercicioEnDiaDelPlanRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -274,11 +292,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "DiaDePlan.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Models\\PlanEntrenamientoModels\\DiaDePlan.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Models\\PlanEntrenamientoModels\\DiaDePlan.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Models\\PlanEntrenamientoModels\\DiaDePlan.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Models\\PlanEntrenamientoModels\\DiaDePlan.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Models\\PlanEntrenamientoModels\\DiaDePlan.cs",
               "RelativeToolTip": "ProgressusWebApi\\Models\\PlanEntrenamientoModels\\DiaDePlan.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -286,11 +304,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "EjercicioEnDiaDelPlan.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Models\\PlanEntrenamientoModels\\EjercicioEnDiaDelPlan.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Models\\PlanEntrenamientoModels\\EjercicioEnDiaDelPlan.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Models\\PlanEntrenamientoModels\\EjercicioEnDiaDelPlan.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Models\\PlanEntrenamientoModels\\EjercicioEnDiaDelPlan.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Models\\PlanEntrenamientoModels\\EjercicioEnDiaDelPlan.cs",
               "RelativeToolTip": "ProgressusWebApi\\Models\\PlanEntrenamientoModels\\EjercicioEnDiaDelPlan.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAowB4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -298,11 +316,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "EjercicioEnDiaDelPlanRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\EjercicioEnDiaDelPlanRepository.cs",
+              "DocumentMoniker": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\EjercicioEnDiaDelPlanRepository.cs",
               "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\EjercicioEnDiaDelPlanRepository.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\EjercicioEnDiaDelPlanRepository.cs",
+              "ToolTip": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\EjercicioEnDiaDelPlanRepository.cs",
               "RelativeToolTip": "ProgressusWebApi\\Repositories\\PlanEntrenamientoRepositories\\EjercicioEnDiaDelPlanRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

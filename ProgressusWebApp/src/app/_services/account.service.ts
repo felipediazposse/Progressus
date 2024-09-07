@@ -51,6 +51,7 @@ export class AccountService {
     }
 
     register(email: string, password: string) {
+        debugger
         return this.http.post(`${baseUrl}/register`, { email, password }).pipe(
             concatMap(() =>
               this.enviarCodigoDeVerificacion(email)

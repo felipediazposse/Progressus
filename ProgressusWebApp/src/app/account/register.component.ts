@@ -2,12 +2,13 @@
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
-
 import { AccountService, AlertService } from '@app/_services';
 import { MustMatch } from '@app/_helpers';
+import {MatIconModule} from '@angular/material/icon'
 
 @Component({ templateUrl: 'register.component.html',
              styleUrls: ['register.component.scss']
+
 })
 export class RegisterComponent implements OnInit {
     form!: FormGroup;
@@ -58,8 +59,10 @@ export class RegisterComponent implements OnInit {
                     this.alertService.success('Registro exitoso, ingrese Codigo de Verificacion', { keepAfterRouteChange: true });
                     this.router.navigate(['../login'], { relativeTo: this.route });
                 },
+                
                 error: error => {
-                    this.alertService.error(error);
+                    debugger;
+                    this.alertService.error("Ya existe un usuario con ese mail en uso");
                     this.submitting = false;
                 }
             });

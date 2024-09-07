@@ -10,12 +10,13 @@ import { VerifyEmailComponent } from './verify-email.component';
 import { ForgotPasswordComponent } from './forgot-password.component';
 import { ResetPasswordComponent } from './reset-password.component';
 import { EmailVerificationComponent } from './email-verification.component';
-
+import {MatIconModule} from '@angular/material/icon'
 @NgModule({
     imports: [
         CommonModule,
         ReactiveFormsModule,
-        AccountRoutingModule
+        AccountRoutingModule,
+        MatIconModule
     ],
     declarations: [
         LayoutComponent,
