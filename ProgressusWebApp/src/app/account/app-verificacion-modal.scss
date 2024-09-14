@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    padding: 20px;
+    border: 1px solid #ccc; /* Opcional, para visualizar el contenedor */
+    border-radius: 10px;    /* Opcional, para bordes redondeados */
+    background-color: #fff; /* Opcional, para un fondo blanco */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.codigo-input {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    width: 100px; /* Tamaño para 4 dígitos */
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #d3d3d3;
+}

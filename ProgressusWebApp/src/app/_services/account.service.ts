@@ -51,7 +51,6 @@ export class AccountService {
     }
 
     register(email: string, password: string) {
-        debugger
         return this.http.post(`${baseUrl}/register`, { email, password }).pipe(
             concatMap(() =>
               this.enviarCodigoDeVerificacion(email)
@@ -79,10 +78,10 @@ export class AccountService {
         return this.http.post(`${baseUrl}/reset-password`, { token, password, confirmPassword });
     }
 
-    confirmarCorreo(codigo: string) {
-        return this.http.post(`${baseUrl}/ConfirmarCorreo`, { codigo });
+    confirmarCorreo(email: string, codigo: string) {
+        return this.http.post(`${baseUrl}/api/Auth/ConfirmarCorreo`, { email, codigo });
     }
-
+    
     getAll() {
         return this.http.get<Account[]>(baseUrl);
     }
