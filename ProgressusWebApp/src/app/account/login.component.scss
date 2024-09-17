@@ -6,22 +6,25 @@
     color: #FFFFFF;
     max-width: 400px;
     width: 100%;
-    margin-bottom: 2rem;
+    text-align: center;
+
 }
 
 .card-header {
-    text-align: center;  
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10%;
 }
 
 .form-label {
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .form-control {
     background-color: #222222;
     border: none;
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
     color: #FFFFFF;
     border-radius: 0;
 }
@@ -47,3 +50,32 @@
 .invalid-feedback {
     color: #FF0000;
 }
+
+.fondo-pagina {
+    background-image: url('/assets/fondogim.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
