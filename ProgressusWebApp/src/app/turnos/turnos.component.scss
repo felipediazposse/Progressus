@@ -1,0 +1,115 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333333; /* Gris claro */
+  color: #32CD32;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.titulo {
+  margin: 0;
+}
+
+.logo {
+  height: 50px; /* Tamaño ajustado del logo */
+  width: auto;
+}
+
+/* Estilos del contenedor principal */
+.turnos-container {
+  margin: auto;
+  padding: 70px 20px; 
+  background-color: #000;
+  width: 100vw;
+  min-height: 100vh;
+  color: #FFFFFF;
+}
+
+.selector-dia {
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mensaje-seleccion {
+  text-align: center;
+  font-size: 1.2em;
+  color: #32CD32;
+}
+
+.turno-card {
+  background-color: #333333;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.turno-card.reservado {
+  background-color: #32CD32;
+  color: #000000;
+}
+
+.btn-reservar, .btn-eliminar, .btn-confirmar {
+  background-color: #32CD32;
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.btn-eliminar {
+  background-color: #FF0000;
+}
+
+/* Botones de Volver y Confirmar */
+.botones-acciones {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-volver, .btn-confirmar {
+  background-color: #32CD32;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-volver {
+  background-color: #32CD32; /* Color verde para el botón Volver */
+}
+
+.btn-confirmar {
+  background-color: #32CD32; /* Color verde para el botón Confirmar */
+}
+
+@media (max-width: 600px) {
+  .turnos-container {
+    padding: 70px 10px; /* Ajustar el padding para pantallas pequeñas */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    height: 40px; /* Tamaño ajustado del logo para pantallas pequeñas */
+  }
+
+  .btn-volver, .btn-confirmar {
+    padding: 8px 16px;
+    margin: 5px;
+  }
+}
