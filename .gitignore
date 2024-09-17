@@ -6,3 +6,9 @@ ProgressusWebApi/.vs/ProgressusWebApi/FileContentIndex/a0197c6e-1e4c-4dce-a7b6-a
 *.vsidx
 *.cs
 *.cache
+.vs/VSWorkspaceState.json
+ProgressusWebApi/ProgressusWebApi/obj/Debug/net8.0/ProgressusWebApi.AssemblyInfo.cs~feature_franC
+ProgressusWebApi/ProgressusWebApi/obj/Debug/net8.0/ProgressusWebApi.AssemblyInfoInputs.cache~feature_franC
+ProgressusWebApp/src/app/account/app-verificacion-modal.component.ts
+ProgressusWebApp/src/app/account/app-verificacion-modal.html
+ProgressusWebApp/src/app/account/app-verificacion-modal.scss
