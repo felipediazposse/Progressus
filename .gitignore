@@ -3,3 +3,6 @@ ProgressusWebApi/.vs/ProgressusWebApi/FileContentIndex/40832d29-5021-4256-8a5e-8
 ProgressusWebApi/.vs/ProgressusWebApi/FileContentIndex/735f59de-7797-4c9d-981c-60bb373951e3.vsidx
 ProgressusWebApi/.vs/ProgressusWebApi/FileContentIndex/7b154b22-8e8a-4199-a81f-5a1416ed95e2.vsidx
 ProgressusWebApi/.vs/ProgressusWebApi/FileContentIndex/a0197c6e-1e4c-4dce-a7b6-ad3f2df49768.vsidx
+*.vsidx
+*.cs
+*.cache
