@@ -1,0 +1,54 @@
+<!-- Barra de navegación -->
+<nav class="navbar">
+  <h2 class="titulo" (click)="volverAlMenu()" style="cursor: pointer;">Gestión de Turnos</h2>
+  <img src="assets/logo.png" alt="Logo" class="logo">
+</nav>
+
+<div class="turnos-container">
+  <!-- Selector del día -->
+  <div class="selector-dia">
+    <label for="dia">Seleccione el día: </label>
+    <select id="dia" [(ngModel)]="diaSeleccionado" (change)="enMenuPrincipal = false">
+      <option value="" disabled selected></option>
+      <option *ngFor="let dia of dias" [value]="dia">{{ dia }}</option>
+    </select>
+  </div>
+
+  <!-- Mostrar mensaje si no se seleccionó un día -->
+  <div *ngIf="!diaSeleccionado" class="mensaje-seleccion">
+    <p>Por favor, seleccione un día para ver los turnos disponibles.</p>
+  </div>
+
+  <!-- Mostrar franjas horarias del día seleccionado -->
+  <div *ngIf="diaSeleccionado" class="turnos-disponibles">
+    <h3>Turnos Disponibles para {{ diaSeleccionado }}</h3>
+    <div *ngFor="let turno of getTurnosPorDia(diaSeleccionado)">
+      <div class="turno-card" [class.reservado]="turno.estudiantes.length >= turno.maxCapacity">
+        <p>{{ turno.hora }}</p>
+        <button *ngIf="!turno.estudiantes.includes(usuario) && turno.estudiantes.length < turno.maxCapacity"
+                class="btn-reservar" (click)="reservarTurno(turno)">Reservar</button>
+        <button *ngIf="turno.estudiantes.includes(usuario)" class="btn-eliminar" (click)="cancelarReserva(turno)">Cancelar Reserva</button>
+        <button *ngIf="turno.estudiantes.length >= turno.maxCapacity && !turno.estudiantes.includes(usuario)" 
+                class="btn-eliminar" disabled>Lleno</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mis Turnos -->
+  <div class="mis-turnos">
+    <h3>Mis Turnos</h3>
+    <div *ngIf="misTurnos.length === 0">No tienes turnos reservados.</div>
+    <div *ngFor="let turno of misTurnos">
+      <div class="turno-card reservado">
+        <p>{{ turno.dia }} - {{ turno.hora }}</p>
+        <button class="btn-eliminar" (click)="cancelarReserva(turno)">Eliminar Turno</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botones de Volver y Confirmar -->
+  <div class="botones-acciones">
+    <button class="btn-volver" (click)="volverAlMenu()">Volver</button>
+    <button *ngIf="mostrarConfirmar" class="btn-confirmar" (click)="confirmarTurnos()">Confirmar</button>
+  </div>
+</div>

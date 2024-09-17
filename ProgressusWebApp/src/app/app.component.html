@@ -1,13 +1,40 @@
 ﻿<div class="app-container" [ngClass]="{ 'bg-light': account }">
     <!-- main nav -->
     <nav class="navbar navbar-expand navbar-dark bg-dark px-3" *ngIf="account">
-        <div class="navbar-nav">
-            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item nav-link">Home</a>
-            <a routerLink="/profile" routerLinkActive="active" class="nav-item nav-link">Profile</a>
-            <a *ngIf="account.role === Role.Admin" routerLink="/admin" routerLinkActive="active" class="nav-item nav-link">Admin</a>
-            <button (click)="logout()" class="btn btn-link nav-item nav-link">Logout</button>
+        <div class="container-fluid">
+            <div class="navbar-nav">
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item nav-link">Inicio</a>
+                <a routerLink="/profile" routerLinkActive="active" class="nav-item nav-link">Mi Perfil</a>
+                <a *ngIf="account.role === Role.Admin" routerLink="/admin" routerLinkActive="active" class="nav-item nav-link">Adminisitrar Usuarios</a>
+            </div>
+
+            <!-- Aseguramos que el botón de Cerrar Sesión esté alineado a la derecha -->
+            <div class="navbar-nav ms-auto">
+                <button type="button" class="btn btn-link nav-item nav-link" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                    Cerrar Sesión
+                </button>
+            </div>
         </div>
     </nav>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logoutModalLabel">Confirmación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Está seguro que desea cerrar sesión?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" (click)="confirmLogout()">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- subnav router outlet -->
     <router-outlet name="subnav"></router-outlet>

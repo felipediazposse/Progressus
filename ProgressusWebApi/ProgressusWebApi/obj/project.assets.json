@@ -4976,19 +4976,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\felip\\.nuget\\packages\\": {}
+    "C:\\Users\\fcapo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ingeniería en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi.csproj",
+      "projectUniqueName": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi.csproj",
       "projectName": "ProgressusWebApi",
-      "projectPath": "D:\\Ingeniería en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi.csproj",
-      "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-      "outputPath": "D:\\Ingeniería en Sistemas\\Proyecto Final\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\obj\\",
+      "projectPath": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi.csproj",
+      "packagesPath": "C:\\Users\\fcapo\\.nuget\\packages\\",
+      "outputPath": "C:\\ProgressuTesis\\ProgressusWebApi\\ProgressusWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fcapo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5076,7 +5076,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,18 @@
+<div class="modal-container">
+    <h2>Introduce el código</h2>
+    <form [formGroup]="verificacionForm" (ngSubmit)="onSubmit()">
+        <input 
+            type="text" 
+            formControlName="codigo" 
+            maxlength="4" 
+            class="codigo-input"
+            placeholder="----"
+            autofocus 
+        />
+        <div *ngIf="verificacionForm.controls['codigo'].invalid && submitted" class="error-message">
+            El código es requerido
+        </div>
+
+        <button type="submit" [disabled]="verificacionForm.invalid">Verificar</button>
+    </form>
+</div>

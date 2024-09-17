@@ -1,27 +1,27 @@
+using MercadoPago.Config;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using ProgressusWebApi.DataContext;
-using ProgressusWebApi.Services.AuthServices;
+using ProgressusWebApi.Repositories.EjercicioRepositories.Interfaces;
+using ProgressusWebApi.Repositories.EjercicioRepositories;
+using ProgressusWebApi.Repositories.Interfaces;
+using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories.Interfaces;
+using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories;
 using ProgressusWebApi.Services.AuthServices.Interfaces;
-using ProgressusWebApi.Services.EmailServices;
+using ProgressusWebApi.Services.AuthServices;
+using ProgressusWebApi.Services.EjercicioServices.Interfaces;
+using ProgressusWebApi.Services.EjercicioServices;
 using ProgressusWebApi.Services.EmailServices.Interfaces;
+using ProgressusWebApi.Services.EmailServices;
+using ProgressusWebApi.Services.PlanEntrenamientoServices.Interfaces;
+using ProgressusWebApi.Services.PlanEntrenamientoServices;
 using ProgressusWebApi.Utilities;
 using Swashbuckle.AspNetCore.Filters;
 using WebApiMercadoPago.Repositories.Interface;
 using WebApiMercadoPago.Repositories;
 using WebApiMercadoPago.Services.Interface;
 using WebApiMercadoPago.Services;
-using MercadoPago.Config;
-using ProgressusWebApi.Repositories.EjercicioRepositories;
-using ProgressusWebApi.Repositories.EjercicioRepositories.Interfaces;
-using ProgressusWebApi.Services.EjercicioServices.Interfaces;
-using ProgressusWebApi.Services.EjercicioServices;
-using ProgressusWebApi.Repositories.Interfaces;
-using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories;
-using ProgressusWebApi.Services.PlanEntrenamientoServices.Interfaces;
-using ProgressusWebApi.Services.PlanEntrenamientoServices;
-using ProgressusWebApi.Repositories.PlanEntrenamientoRepositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +30,19 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
 {
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+});
+
+// Configuración de CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+       policyBuilder =>
+       {
+           policyBuilder.WithOrigins("http://localhost:4200")
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials();
+       });
 });
 
 // Inyección de repositorios y servicios
@@ -86,7 +99,8 @@ builder.Services.Configure<GmailSetter>(builder.Configuration.GetSection("GmailS
 
 // Configuración para sistema de cobros con MercadoPago
 builder.Services.AddScoped<IMercadoPagoRepository, MercadoPagoRepository>();
-builder.Services.AddScoped<IMercadoPagoService, MercadoPagoService>(); MercadoPagoConfig.AccessToken = "APP_USR-2278733141716614-062815-583c9779901a7bbf32c8e8a73971e44c-1878150528";
+builder.Services.AddScoped<IMercadoPagoService, MercadoPagoService>();
+MercadoPagoConfig.AccessToken = "APP_USR-2278733141716614-062815-583c9779901a7bbf32c8e8a73971e44c-1878150528";
 
 // Construir la aplicación con todas las configuraciones y servicios definidos en el objeto builder
 var app = builder.Build();
@@ -97,6 +111,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Aplicar la política de CORS
+app.UseCors("AllowSpecificOrigin");
+
 
 // Mapear endpoints de authorization y authentication
 app.MapIdentityApi<IdentityUser>();

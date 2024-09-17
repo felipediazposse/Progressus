@@ -5,7 +5,9 @@ import { first } from 'rxjs/operators';
 
 import { AccountService, AlertService } from '@app/_services';
 
-@Component({ templateUrl: 'login.component.html' })
+@Component({ templateUrl: 'login.component.html',
+             styleUrls: ['login.component.scss']
+            })
 export class LoginComponent implements OnInit {
     form!: FormGroup;
     submitting = false;
@@ -44,13 +46,14 @@ export class LoginComponent implements OnInit {
         this.accountService.login(this.f.email.value, this.f.password.value)
             .pipe(first())
             .subscribe({
+                
                 next: () => {
                     // get return url from query parameters or default to home page
                     const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
                     this.router.navigateByUrl(returnUrl);
                 },
-                error: error => {
-                    this.alertService.error(error);
+                error: error => { 
+                    this.alertService.error("Credenciales incorrectas");
                     this.submitting = false;
                 }
             });
