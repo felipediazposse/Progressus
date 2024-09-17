@@ -52,9 +52,7 @@ export class LoginComponent implements OnInit {
                     const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
                     this.router.navigateByUrl(returnUrl);
                 },
-                error: error => {
-                   
-                   
+                error: error => { 
                     this.alertService.error("Credenciales incorrectas");
                     this.submitting = false;
                 }

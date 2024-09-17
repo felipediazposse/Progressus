@@ -58,7 +58,7 @@ export class RegisterComponent implements OnInit {
 
         try {
             // Guardamos el email
-            debugger
+            
             this.email = this.f.email.value;
 
             // Registramos al usuario y esperamos a que se complete la solicitud
@@ -99,7 +99,6 @@ export class RegisterComponent implements OnInit {
         try {
             // Verificamos el código ingresado
             await this.accountService.confirmarCorreo(this.email, codigo).toPromise();
-          debugger
             // Si es exitoso, mostramos el mensaje de éxito y redirigimos al login
             this.alertService.success('Correo verificado exitosamente.', { keepAfterRouteChange: true });
             this.router.navigate(['../login'], { relativeTo: this.route });

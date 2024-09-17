@@ -6,3 +6,5 @@
 *.suo
 *.userosscache
 *.sln.docstates
+*.vsidx
+/obj
