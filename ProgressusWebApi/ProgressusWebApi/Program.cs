@@ -20,8 +20,10 @@ using ProgressusWebApi.Utilities;
 using Swashbuckle.AspNetCore.Filters;
 using WebApiMercadoPago.Repositories.Interface;
 using WebApiMercadoPago.Repositories;
-using WebApiMercadoPago.Services.Interface;
 using WebApiMercadoPago.Services;
+using ProgressusWebApi.Services.CobroServices.Interfaces;
+using ProgressusWebApi.Services.ReservaService.cs.interfaces;
+using ProgressusWebApi.Services.ReservaServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -101,6 +103,7 @@ builder.Services.Configure<GmailSetter>(builder.Configuration.GetSection("GmailS
 builder.Services.AddScoped<IMercadoPagoRepository, MercadoPagoRepository>();
 builder.Services.AddScoped<IMercadoPagoService, MercadoPagoService>();
 MercadoPagoConfig.AccessToken = "APP_USR-2278733141716614-062815-583c9779901a7bbf32c8e8a73971e44c-1878150528";
+builder.Services.AddScoped<IReservaService, ReservaService>();
 
 // Construir la aplicación con todas las configuraciones y servicios definidos en el objeto builder
 var app = builder.Build();

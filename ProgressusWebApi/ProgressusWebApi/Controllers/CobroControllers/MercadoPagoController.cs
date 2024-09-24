@@ -1,7 +1,7 @@
 ﻿using MercadoPago.Client.Preference;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WebApiMercadoPago.Services.Interface;
+using ProgressusWebApi.Services.CobroServices.Interfaces;
 
 namespace ProgressusWebApi.Controllers.CobroControllers
 {

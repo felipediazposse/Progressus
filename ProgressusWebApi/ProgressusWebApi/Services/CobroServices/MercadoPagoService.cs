@@ -1,7 +1,7 @@
 ﻿using MercadoPago.Client.Preference;
 using MercadoPago.Resource.Preference;
+using ProgressusWebApi.Services.CobroServices.Interfaces;
 using WebApiMercadoPago.Repositories.Interface;
-using WebApiMercadoPago.Services.Interface;
 
 namespace WebApiMercadoPago.Services
 {
