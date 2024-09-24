@@ -1,14 +1,18 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using ProgressusWebApi.Model;
 using ProgressusWebApi.Models.EjercicioModels;
 using ProgressusWebApi.Models.PlanEntrenamientoModels;
+using ProgressusWebApi.Models.RerservasModels;
 
 namespace ProgressusWebApi.DataContext
 {
     public class ProgressusDataContext : IdentityDbContext
     {
         public ProgressusDataContext(DbContextOptions<ProgressusDataContext> options) : base(options) { }
+
+        // DbSets para los modelos ya existentes
         public DbSet<PlanDeEntrenamiento> PlanesDeEntrenamiento { get; set; }
         public DbSet<DiaDePlan> DiasDePlan { get; set; }
         public DbSet<EjercicioEnDiaDelPlan> EjerciciosDelDia { get; set; }
@@ -19,6 +23,9 @@ namespace ProgressusWebApi.DataContext
         public DbSet<GrupoMuscular> GruposMusculares { get; set; }
         public DbSet<AsignacionDePlan> AsignacionesDePlanes { get; set; }
         public DbSet<ObjetivoDelPlan> ObjetivosDePlanes { get; set; }
+
+        // Agregar DbSet para Reservas
+        public DbSet<ReservaTurno> Reservas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -73,11 +80,6 @@ namespace ProgressusWebApi.DataContext
                 .WithMany(gm => gm.MusculosDelGrupo)
                 .HasForeignKey(m => m.GrupoMuscularId);
 
-            //modelBuilder.Entity<AsignacionDePlan>()
-                //.HasOne(ap => ap.Socio)
-                //.WithMany()
-                //.HasForeignKey(ap => ap.SocioId);
-
             modelBuilder.Entity<AsignacionDePlan>()
                 .HasOne(ap => ap.PlanDeEntrenamiento)
                 .WithMany(p => p.Asignaciones)
@@ -87,6 +89,13 @@ namespace ProgressusWebApi.DataContext
                 .HasOne(m => m.ObjetivoDelPlan)
                 .WithMany(op => op.PlanesDeEntrenamiento)
                 .HasForeignKey(m => m.ObjetivoDelPlanId);
+
+            modelBuilder.Entity<ReservaTurno>()
+             .HasOne<IdentityUser>()  // O reemplaza con tu clase personalizada si la tienes
+             .WithMany()
+              .HasForeignKey(r => r.UserId)
+              .HasConstraintName("FK_Reservas_Users");
+
         }
     }
 }

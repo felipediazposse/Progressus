@@ -6,7 +6,6 @@ using ProgressusWebApi.DataContext;
 using ProgressusWebApi.Dtos.RerservaDto;
 using ProgressusWebApi.Models.RerservasModels;
 using ProgressusWebApi.Services.ReservaService.cs.interfaces;
-using ProgressusWebApi.Models.RerservasModels;  // Asegúrate de usar el espacio de nombres correcto
 
 namespace ProgressusWebApi.Services.ReservaServices
 {
