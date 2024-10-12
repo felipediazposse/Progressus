@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets"
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:server=DESKTOP-EP9FF3K::SQLEXPRESS;database=ProgressusDB;trusted_connection=true;TrustServerCertificate=True;",
+      "dynamicId": null
+    }
+  }
+}

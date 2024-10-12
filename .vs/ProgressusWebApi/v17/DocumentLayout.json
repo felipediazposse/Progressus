@@ -1,0 +1,476 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\services\\grupomuscularservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\services\\grupomuscularservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\controllers\\ejerciciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\controllers\\ejerciciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\services\\ejercicioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\services\\ejercicioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\services\\interfaces\\iejercicioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\services\\interfaces\\iejercicioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\services\\interfaces\\igrupomuscularservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\services\\interfaces\\igrupomuscularservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\controllers\\plandeentrenamientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\controllers\\plandeentrenamientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\musculodeejerciciorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\musculodeejerciciorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\musculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\musculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\interfaces\\imusculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\interfaces\\imusculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\grupomuscularrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\grupomuscularrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\ejerciciorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\ejerciciorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\interfaces\\iejerciciorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\interfaces\\iejerciciorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\model\\diadeplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\model\\diadeplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\services\\interfaces\\imusculoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\services\\interfaces\\imusculoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\services\\interfaces\\imusculodeejercicioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\services\\interfaces\\imusculodeejercicioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\interfaces\\igrupomuscularrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\interfaces\\igrupomuscularrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\repositories\\interfaces\\imusculodeejercicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\repositories\\interfaces\\imusculodeejercicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\felip\\AppData\\Roaming\\Microsoft\\UserSecrets\\b7762e54-cfef-48c7-8db4-92038e2b97c2\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\controllers\\musculodeejerciciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\controllers\\musculodeejerciciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\controllers\\musculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\controllers\\musculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\model\\musculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\model\\musculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\model\\musculodeejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\model\\musculodeejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\services\\musculodeejercicioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\services\\musculodeejercicioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|d:\\backup\\facultad\\ingenier\u00EDa en sistemas\\5to a\u00F1o\\pfi\\progressus\\progressuswebapi\\progressuswebapi\\progressuswebapi\\services\\musculoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44273C56-9057-4DF0-9A2A-9824DAA6E3DF}|ProgressusWebApi\\ProgressusWebApi.csproj|solutionrelative:progressuswebapi\\services\\musculoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EjercicioController.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\EjercicioController.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Controllers\\EjercicioController.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\EjercicioController.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Controllers\\EjercicioController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAA3wC4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:27:21.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlanDeEntrenamientoController.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\PlanDeEntrenamientoController.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Controllers\\PlanDeEntrenamientoController.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\PlanDeEntrenamientoController.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Controllers\\PlanDeEntrenamientoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T05:20:39.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IGrupoMuscularService.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\Interfaces\\IGrupoMuscularService.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Services\\Interfaces\\IGrupoMuscularService.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\Interfaces\\IGrupoMuscularService.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Services\\Interfaces\\IGrupoMuscularService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T05:25:00.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEjercicioService.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\Interfaces\\IEjercicioService.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Services\\Interfaces\\IEjercicioService.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\Interfaces\\IEjercicioService.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Services\\Interfaces\\IEjercicioService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:30:30.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EjercicioService.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\EjercicioService.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Services\\EjercicioService.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\EjercicioService.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Services\\EjercicioService.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAIwBEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:29:28.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GrupoMuscularService.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\GrupoMuscularService.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Services\\GrupoMuscularService.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\GrupoMuscularService.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Services\\GrupoMuscularService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T03:02:28.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MusculoDeEjercicioRepository.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\MusculoDeEjercicioRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\MusculoDeEjercicioRepository.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\MusculoDeEjercicioRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\MusculoDeEjercicioRepository.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:35:34.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MusculoRepository.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\MusculoRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\MusculoRepository.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\MusculoRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\MusculoRepository.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowDQAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T04:51:55.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IMusculoRepository.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\Interfaces\\IMusculoRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\Interfaces\\IMusculoRepository.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\Interfaces\\IMusculoRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\Interfaces\\IMusculoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T05:30:32.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EjercicioRepository.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\EjercicioRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\EjercicioRepository.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\EjercicioRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\EjercicioRepository.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:35:22.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GrupoMuscularRepository.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\GrupoMuscularRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\GrupoMuscularRepository.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\GrupoMuscularRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\GrupoMuscularRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T03:02:59.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IMusculoDeEjercicoRepository.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\Interfaces\\IMusculoDeEjercicoRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\Interfaces\\IMusculoDeEjercicoRepository.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\Interfaces\\IMusculoDeEjercicoRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\Interfaces\\IMusculoDeEjercicoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:37:41.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IEjercicioRepository.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\Interfaces\\IEjercicioRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\Interfaces\\IEjercicioRepository.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\Interfaces\\IEjercicioRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\Interfaces\\IEjercicioRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:37:27.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IMusculoService.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\Interfaces\\IMusculoService.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Services\\Interfaces\\IMusculoService.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\Interfaces\\IMusculoService.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Services\\Interfaces\\IMusculoService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T05:33:06.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DiaDePlan.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Model\\DiaDePlan.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Model\\DiaDePlan.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Model\\DiaDePlan.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Model\\DiaDePlan.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T19:25:30.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Data\\DataContext.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Data\\DataContext.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Data\\DataContext.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAUwEYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T00:18:30.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IGrupoMuscularRepository.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\Interfaces\\IGrupoMuscularRepository.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Repositories\\Interfaces\\IGrupoMuscularRepository.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Repositories\\Interfaces\\IGrupoMuscularRepository.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Repositories\\Interfaces\\IGrupoMuscularRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T05:30:13.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IMusculoDeEjercicioService.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\Interfaces\\IMusculoDeEjercicioService.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Services\\Interfaces\\IMusculoDeEjercicioService.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\Interfaces\\IMusculoDeEjercicioService.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Services\\Interfaces\\IMusculoDeEjercicioService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:24:52.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Program.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Program.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Program.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:26:10.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Musculo.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Model\\Musculo.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Model\\Musculo.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Model\\Musculo.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Model\\Musculo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T06:08:56.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\appsettings.json",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\appsettings.json",
+              "RelativeToolTip": "ProgressusWebApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-15T21:49:36.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\felip\\AppData\\Roaming\\Microsoft\\UserSecrets\\b7762e54-cfef-48c7-8db4-92038e2b97c2\\secrets.json",
+              "ToolTip": "C:\\Users\\felip\\AppData\\Roaming\\Microsoft\\UserSecrets\\b7762e54-cfef-48c7-8db4-92038e2b97c2\\secrets.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-16T00:04:32.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MusculoController.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\MusculoController.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Controllers\\MusculoController.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\MusculoController.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Controllers\\MusculoController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:32:25.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MusculoDeEjercicioController.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\MusculoDeEjercicioController.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Controllers\\MusculoDeEjercicioController.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Controllers\\MusculoDeEjercicioController.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Controllers\\MusculoDeEjercicioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:23:14.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ProgressusWebApi\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAUAAAAAAAAAAMBdwBoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-27T22:45:40.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MusculoDeEjercicio.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Model\\MusculoDeEjercicio.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Model\\MusculoDeEjercicio.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Model\\MusculoDeEjercicio.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Model\\MusculoDeEjercicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T06:08:54.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MusculoDeEjercicioService.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\MusculoDeEjercicioService.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Services\\MusculoDeEjercicioService.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\MusculoDeEjercicioService.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Services\\MusculoDeEjercicioService.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAIwAkAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:35:50.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MusculoService.cs",
+              "DocumentMoniker": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\MusculoService.cs",
+              "RelativeDocumentMoniker": "ProgressusWebApi\\Services\\MusculoService.cs",
+              "ToolTip": "D:\\Backup\\Facultad\\Ingenier\u00EDa en Sistemas\\5to A\u00F1o\\PFI\\Progressus\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi\\Services\\MusculoService.cs",
+              "RelativeToolTip": "ProgressusWebApi\\Services\\MusculoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:29:42.95Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
